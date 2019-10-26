@@ -14,11 +14,3 @@ script:
 
 after_success:
   - codecov
-
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GHP_PUBLISH
-  keep_history: true
-  on:
-    branch: master
