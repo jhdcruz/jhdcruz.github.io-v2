@@ -2,8 +2,3 @@
   command = "yarn build"
   functions = "functions"
   publish = "dist"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 301

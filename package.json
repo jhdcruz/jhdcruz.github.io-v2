@@ -4,23 +4,28 @@
   "license": "MIT",
   "author": "Aegir Aideron <jhdcruz@vivaldi.net>",
   "private": true,
+  "scripts": {
+    "lint": "prettier \"src/**/*.{html,scss,css,js,jsx}\" --write && eslint \"src/**/*.{js,jsx}\" && stylelint \"src/**/*.{scss,css}\"",
+    "test": "jest",
+    "start": "webpack-dev-server --mode development --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
   "dependencies": {
     "bulma": "^0.8.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router": "^5.1.2"
   },
-  "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production",
-    "test": "jest"
-  },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
+    "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.4.0",
     "eslint-config-standard": "^14.1.0",
@@ -37,18 +42,28 @@
     "prettier": "^1.18.2",
     "react-hot-loader": "^4.12.15",
     "sass-loader": "^8.0.0",
+    "source-map-loader": "^0.2.4",
     "style-loader": "^1.0.0",
     "stylelint": "^11.1.1",
     "stylelint-config-prettier": "^6.0.0",
     "stylelint-prettier": "^1.1.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
   },
   "keywords": [
     "jhdcruz",
     "Aegir Aideron",
     "Joshua Hero Dela Cruz",
     "Portfolio"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhdcruz/jhdcruz.github.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/jhdcruz/jhdcruz.github.io/issues"
+  },
+  "homepage": "https://jhdcruz.me/"
 }
