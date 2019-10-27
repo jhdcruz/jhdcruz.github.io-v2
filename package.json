@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "prettier \"src/**/*.{html,scss,css,js,jsx}\" --write && eslint \"src/**/*.{js,jsx}\" && stylelint \"src/**/*.{scss,css}\"",
     "test": "jest",
-    "start": "webpack-dev-server --mode development --open --config webpack.dev.js",
+    "start": "webpack-dev-server --mode development --open --config webpack.dev.js --hot",
     "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
