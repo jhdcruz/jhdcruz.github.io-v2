@@ -1,17 +1,15 @@
+const webpack = require("webpack");
 const path = require("path");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+// const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: ["react-hot-loader/patch", "./src/index.jsx"],
-  plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: "./public/index.html",
-      filename: "index.html",
-      hash: true
-    })
-  ],
+  output: {
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist")
+  },
   module: {
     rules: [
       {
@@ -28,8 +26,10 @@ module.exports = {
           },
           {
             loader: "sass-loader",
-            sassOptions: {
-              outputStyle: "compressed"
+            options: {
+              sassOptions: {
+                outputStyle: "compressed"
+              }
             }
           }
         ]
@@ -44,8 +44,45 @@ module.exports = {
       }
     ]
   },
-  output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist")
-  }
+  plugins: [
+    new CleanWebpackPlugin(),
+    new InlineManifestWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: require("html-webpack-template"),
+      title: "About me | Joshua Hero Dela Cruz",
+      appMountId: "root",
+      mobile: true,
+      lang: "en-US",
+      links: [
+        "https://fonts.googleapis.com/css?family=Roboto",
+        {
+          href: "/icon-192.png",
+          rel: "apple-touch-icon",
+          sizes: "192x192"
+        },
+        {
+          href: "/icon-512.png",
+          rel: "icon",
+          sizes: "512x512",
+          type: "image/png"
+        }
+      ],
+      meta: [
+        {
+          name: "description",
+          content: "A better default template for html-webpack-plugin."
+        },
+        {
+          name: "author",
+          content: "Joshua Hero Dela Cruz (Jhdcruz)"
+        }
+      ],
+      googleAnalytics: {
+        trackingId: "UA-XXXX-XX",
+        pageViewOnLoad: true
+      },
+      inlineManifestWebpackName: "webpackManifest"
+    })
+  ]
 };

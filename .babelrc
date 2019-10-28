@@ -8,8 +8,7 @@
         }
       }
     ],
-    "@babel/preset-react",
-    "@babel/plugin-syntax-dynamic-import",
-    "react-hot-loader/babel"
-  ]
+    "@babel/preset-react"
+  ],
+  "plugins": ["@babel/plugin-syntax-dynamic-import", "react-hot-loader/babel"]
 }
