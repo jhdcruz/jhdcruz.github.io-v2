@@ -1,8 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-// const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: ["react-hot-loader/patch", "./src/index.jsx"],
@@ -45,7 +43,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(),
     new InlineManifestWebpackPlugin(),
     new HtmlWebpackPlugin({
       inject: false,
@@ -55,7 +52,6 @@ module.exports = {
       mobile: true,
       lang: "en-US",
       links: [
-        "https://fonts.googleapis.com/css?family=Roboto",
         {
           href: "/icon-192.png",
           rel: "apple-touch-icon",
@@ -71,15 +67,15 @@ module.exports = {
       meta: [
         {
           name: "description",
-          content: "A better default template for html-webpack-plugin."
+          content: "Front-End Web Developer, Open-Source Enthusiast."
         },
         {
           name: "author",
-          content: "Joshua Hero Dela Cruz (Jhdcruz)"
+          content: "Joshua Hero Dela Cruz (Aegir Aideron)"
         }
       ],
       googleAnalytics: {
-        trackingId: "UA-XXXX-XX",
+        trackingId: "UA-131928651-1",
         pageViewOnLoad: true
       },
       inlineManifestWebpackName: "webpackManifest"
