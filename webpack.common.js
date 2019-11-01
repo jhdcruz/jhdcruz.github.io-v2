@@ -1,27 +1,33 @@
-const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const InlineManifestWebpackPlugin = require("inline-manifest-webpack-plugin");
 
 module.exports = {
-  entry: ["react-hot-loader/patch", "./src/index.jsx"],
+  entry: ["./src/index.js"],
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js"
+  },
+  resolve: {
+    modules: ["node_modules"],
+    alias: {
+      images: path.join(__dirname, "./src/assets/img"),
+      fonts: path.join(__dirname, "./src/assets/fonts"),
+      components: path.join(__dirname, "./src/components"),
+      dependency: path.join(__dirname, "node_modules")
+    }
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ["babel-loader"]
+        use: "babel-loader"
       },
       {
         test: /\.s[ac]ss$/i,
         use: [
           "style-loader",
-          {
-            loader: "css-loader"
-          },
           {
             loader: "sass-loader",
             options: {
@@ -29,6 +35,15 @@ module.exports = {
                 outputStyle: "compressed"
               }
             }
+          }
+        ]
+      },
+      {
+        test: /\.css$/i,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader"
           }
         ]
       },
@@ -43,7 +58,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new InlineManifestWebpackPlugin(),
     new HtmlWebpackPlugin({
       inject: false,
       template: require("html-webpack-template"),
@@ -53,12 +67,12 @@ module.exports = {
       lang: "en-US",
       links: [
         {
-          href: "/icon-192.png",
+          href: "icon-192.png",
           rel: "apple-touch-icon",
           sizes: "192x192"
         },
         {
-          href: "/icon-512.png",
+          href: "icon-512.png",
           rel: "icon",
           sizes: "512x512",
           type: "image/png"
@@ -79,6 +93,7 @@ module.exports = {
         pageViewOnLoad: true
       },
       inlineManifestWebpackName: "webpackManifest"
-    })
+    }),
+    new InlineManifestWebpackPlugin()
   ]
 };
