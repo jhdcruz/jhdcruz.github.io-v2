@@ -14,6 +14,7 @@ module.exports = merge(common, {
       inject: false,
       template: require("html-webpack-template"),
       title: "About me | Joshua Hero Dela Cruz | Developer Mode",
+      favicon: `images/icon.png`,
       appMountId: "root",
       mobile: true,
       lang: "en-US",
@@ -28,6 +29,10 @@ module.exports = merge(common, {
           rel: "icon",
           sizes: "512x512",
           type: "image/png"
+        },
+        {
+          href: "https://fonts.googleapis.com/css?family=Kanit&display=swap",
+          rel: "stylesheet"
         }
       ],
       meta: [
@@ -38,6 +43,9 @@ module.exports = merge(common, {
         {
           name: "author",
           content: "Joshua Hero Dela Cruz (Aegir Aideron)"
+        },
+        {
+          viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
         }
       ],
       googleAnalytics: {
