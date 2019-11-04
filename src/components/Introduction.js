@@ -1,13 +1,16 @@
 import React from "react";
 
+import "animate.css";
 import "./Introduction.scss";
 
 function Introduction() {
   return (
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">Front-End Web Developer</h1>
-        <h2 class="subtitle">
+    <div className="hero-body">
+      <div className="container">
+        <h1 className="title animated fadeIn slow">
+          Front-End Web Development
+        </h1>
+        <h2 className="subtitle animated fadeIn slower">
           Duis cillum cillum voluptate voluptate minim proident fugiat deserunt
           anim fugiat reprehenderit.
         </h2>

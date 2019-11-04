@@ -1,4 +1,15 @@
 .hero-body {
   padding: 2rem 1.5rem;
-  margin: 20vh auto;
+  margin: 20vh 8vw;
+
+  .title {
+    font-weight: bold;
+    color: whitesmoke;
+  }
+
+  .subtitle {
+    color: #b4b4b4;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+  }
 }
