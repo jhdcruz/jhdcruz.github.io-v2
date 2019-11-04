@@ -8,7 +8,7 @@ import Introduction from "components/Introduction";
 import Footer from "components/Footer";
 
 ReactDOM.render(
-  <div className="Wrapper">
+  <div className="hero">
     <BgParticles />
     <Navigation />
     <Introduction />

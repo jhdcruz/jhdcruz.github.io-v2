@@ -8,6 +8,7 @@ import "./BgParticles.scss";
 function bgParticles() {
   return (
     <Particles
+      className="particles-container"
       canvasClassName="particle-bg"
       height="100%"
       width="100%"

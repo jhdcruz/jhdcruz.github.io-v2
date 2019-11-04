@@ -4,7 +4,7 @@ import "./Footer.scss";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="hero-footer">
       <div className="container has-text-centered">
         <a
           href="https://github.com/jhdcruz/jhdcruz.github.io"
