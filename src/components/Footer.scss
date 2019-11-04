@@ -1,0 +1,18 @@
+.footer,
+.gh-redirect {
+  font-size: 11px;
+  color: whitesmoke;
+  background-color: transparent;
+  padding: 5px;
+  margin: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  :hover {
+    text-decoration: none;
+    color: inherit;
+    cursor: help;
+  }
+}

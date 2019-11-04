@@ -1,23 +1,17 @@
-import React from "dependency/react";
+import React from "react";
 
 import "./Introduction.scss";
 
 function Introduction() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">Front-End Web Developer</h1>
+        <h2 class="subtitle">
+          Duis cillum cillum voluptate voluptate minim proident fugiat deserunt
+          anim fugiat reprehenderit.
+        </h2>
+      </div>
     </div>
   );
 }

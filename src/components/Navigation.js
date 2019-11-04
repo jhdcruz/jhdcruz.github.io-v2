@@ -1,31 +1,53 @@
 import React from "react";
-import "depedency/react-bulma-components/dist/react-bulma-components.min.css";
+import "bulma/css/bulma.min.css";
 
-import Navbar from "depedency/react-bulma-components";
+import brand from "images/HERO.svg";
 import "./Navigation.scss";
 
 function Navigation() {
-  return (
-    <Navbar>
-      <Navbar.Brand>
-        <Navbar.Item renderAs="a" href="/">
-          <img
-            src="../assets/img/HERO.svg"
-            alt="HERO"
-            width="112"
-            height="28"
-          />
-        </Navbar.Item>
-        <Navbar.Burger />
-      </Navbar.Brand>
+  function navActive() {
+    const navBurger = document.querySelector(".navbar-burger");
+    const navMenu = document.querySelector(".navbar-menu");
 
-      <Navbar.Menu>
-        <Navbar.Container position="end">
-          <Navbar.Item href="/projects">Projects</Navbar.Item>
-          <Navbar.Item href="/contacts">Contact</Navbar.Item>
-        </Navbar.Container>
-      </Navbar.Menu>
-    </Navbar>
+    navBurger.classList.toggle("is-active");
+    navMenu.classList.toggle("is-active");
+  }
+
+  return (
+    <nav
+      className="navbar is-transparent"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div className="navbar-brand">
+        <a className="navbar-item branding" href="/">
+          <img src={brand} alt="H E R O" width="85" height="auto" />
+        </a>
+
+        <a
+          role="button"
+          className="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          onClick={navActive}
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div className="navbar-menu">
+        <div className="navbar-end">
+          <a href="#projects" className="navbar-item">
+            Projects
+          </a>
+          <a href="#contacts" className="navbar-item">
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
   );
 }
 
