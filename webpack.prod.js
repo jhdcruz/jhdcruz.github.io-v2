@@ -12,7 +12,7 @@ module.exports = merge(common, {
     splitChunks: {
       cacheGroups: {
         vendor: {
-          test: /[\\/]yarn.lock[\\/]/,
+          test: /[\\/]node_modules[\\/]/,
           chunks: "all"
         }
       }
