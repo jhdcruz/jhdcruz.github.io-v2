@@ -1,7 +1,7 @@
 import React from "react";
 
 import "animate.css";
-import "./Footer.scss";
+import "./styles/Footer.scss";
 
 function Footer() {
   return (

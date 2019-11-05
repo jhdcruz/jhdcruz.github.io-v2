@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Particles from "react-particles-js";
 import particlesConfig from "config/particlesjs-config.json";
 
-import "./BgParticles.scss";
+import "./styles/BgParticles.scss";
 
 function bgParticles() {
   return (

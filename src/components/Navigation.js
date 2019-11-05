@@ -2,7 +2,7 @@ import React from "react";
 import "bulma/css/bulma.min.css";
 
 import brand from "images/HERO.svg";
-import "./Navigation.scss";
+import "./styles/Navigation.scss";
 
 function Navigation() {
   function navActive() {

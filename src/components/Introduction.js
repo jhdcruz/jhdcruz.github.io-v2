@@ -1,7 +1,7 @@
 import React from "react";
 
 import "animate.css";
-import "./Introduction.scss";
+import "./styles/Introduction.scss";
 
 function Introduction() {
   return (
@@ -14,10 +14,14 @@ function Introduction() {
           Duis cillum cillum voluptate voluptate minim proident fugiat deserunt
           anim fugiat reprehenderit.
         </h2>
-        <button class="button is-white is-outlined">
-          Projects / Contributions
-        </button>
-        <button class="button is-white is-outlined">Contact</button>
+        <div className="field is-grouped">
+          <a href="#projects" className="button is-outlined">
+            Projects & Contributions
+          </a>
+          <a href="#contact" className="button is-outlined">
+            Contact
+          </a>
+        </div>
       </div>
     </div>
   );
