@@ -1,0 +1,45 @@
+h2 {
+  color: #fff;
+  font-size: 22px;
+  margin: 0 0 0 50px;
+}
+
+.card {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  vertical-align: middle;
+  background-color: transparent;
+  padding: 1.7rem 2rem;
+
+  .media {
+    margin-bottom: 0.8rem !important;
+  }
+
+  .Icon {
+    border-radius: 25%;
+  }
+
+  .title {
+    font-family: yeysk, sans-serif;
+    font-size: 17px;
+    color: #fff;
+  }
+
+  .content {
+    color: #ececec;
+  }
+
+  .button {
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    margin: auto 5px;
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+    vertical-align: middle;
+  }
+
+  .button.is-hovered,
+  .button:hover {
+    border-color: #3273dc;
+    color: #3273dc;
+  }
+}
