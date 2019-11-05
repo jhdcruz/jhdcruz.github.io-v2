@@ -6,18 +6,6 @@ const InlineManifestWebpackPlugin = require("inline-manifest-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "production",
-  optimization: {
-    moduleIds: "hashed",
-    runtimeChunk: "single",
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          chunks: "all"
-        }
-      }
-    }
-  },
   plugins: [
     new HtmlWebpackPlugin({
       inject: false,
