@@ -1,6 +1,7 @@
 const merge = require("webpack-merge");
 const common = require("./webpack.common");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const InlineManifestWebpackPlugin = require("inline-manifest-webpack-plugin");
 
 module.exports = merge(common, {
@@ -23,23 +24,11 @@ module.exports = merge(common, {
       hash: true,
       template: require("html-webpack-template"),
       title: "About me | Joshua Hero Dela Cruz",
-      favicon: "images/icon.png",
       appMountId: "root",
       mobile: true,
       lang: "en-US",
       showErrors: false,
       links: [
-        {
-          href: "icon-192.png",
-          rel: "apple-touch-icon",
-          sizes: "192x192"
-        },
-        {
-          href: "icon-512.png",
-          rel: "icon",
-          sizes: "512x512",
-          type: "image/png"
-        },
         {
           href: "https://fonts.googleapis.com/css?family=Kanit&display=swap",
           rel: "stylesheet"
@@ -64,6 +53,7 @@ module.exports = merge(common, {
       },
       inlineManifestWebpackName: "webpackManifest"
     }),
+    new FaviconsWebpackPlugin("./src/assets/img/icon.png"),
     new InlineManifestWebpackPlugin()
   ]
 });
