@@ -15,7 +15,6 @@ module.exports = merge(common, {
       inject: false,
       template: require("html-webpack-template"),
       title: "About me | Joshua Hero Dela Cruz | Developer Mode",
-      favicon: "./favicon.ico",
       appMountId: "root",
       mobile: true,
       lang: "en-US",
