@@ -22,6 +22,12 @@ module.exports = merge(common, {
           rel: "stylesheet"
         }
       ],
+      scripts: [
+        {
+          src: "https://kit.fontawesome.com/13430cf332.js",
+          crossorigin: "anonymous"
+        }
+      ],
       meta: [
         {
           name: "description",
