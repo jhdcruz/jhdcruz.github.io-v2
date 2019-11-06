@@ -1,6 +1,6 @@
 .hero-body {
   padding: 2rem 1.5rem;
-  margin: 25vh 8vw;
+  margin: 25vh 8vw 35vh 8vw;
 
   .container {
     .title {
@@ -21,6 +21,10 @@
       border-color: #fff;
       background-color: transparent;
       vertical-align: middle;
+
+      svg {
+        margin: auto 6px auto auto;
+      }
     }
 
     .button.is-hovered,
