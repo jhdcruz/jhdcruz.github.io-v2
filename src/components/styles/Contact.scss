@@ -1,0 +1,26 @@
+#ContactForm {
+  margin: 10vh auto;
+}
+
+form {
+  padding: 0 6rem 0 0;
+  .field {
+    .label {
+      color: white;
+    }
+
+    .help {
+      font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+      color: #adadad;
+    }
+
+    .control,
+    .button {
+      font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+      color: #fff;
+      border-color: #fff;
+      background-color: transparent;
+      vertical-align: middle;
+    }
+  }
+}
