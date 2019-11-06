@@ -5,7 +5,7 @@
   "author": "Aegir Aideron <jhdcruz@vivaldi.net>",
   "private": true,
   "scripts": {
-    "lint": "prettier \"src/**/*.{html,scss,js,jsx}\" --write && eslint \"src/**/*.{js,jsx}\" && stylelint \"src/**/*.{scss,css}\"",
+    "lint": "prettier \"src/**/**/*.{html,scss,js,jsx}\" --write && eslint \"src/**/*.{js,jsx}\" && stylelint \"src/**/**/*.{scss,css}\"",
     "test": "echo \"Test under work!\"",
     "start": "webpack-dev-server --mode development --open --config webpack.dev.js --hot",
     "build": "webpack --config webpack.prod.js"
