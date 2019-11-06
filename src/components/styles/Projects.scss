@@ -1,14 +1,38 @@
+.ContentWrapper {
+  margin: 40vh auto;
+}
+
 h2 {
   color: #fff;
   font-size: 22px;
-  margin: 0 0 0 50px;
+}
+
+hr {
+  margin: 10px auto;
+  display: block;
+  border: none;
+  height: 1px;
+  border-radius: 15px;
+  background: -webkit-gradient(
+    radial,
+    50% 50%,
+    0,
+    50% 50%,
+    580,
+    from(#fff),
+    to(rgba(104, 104, 104, 0.3))
+  );
+}
+
+.ProjectsList {
+  margin: 8px auto;
+  padding: 0.9rem auto !important;
 }
 
 .card {
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   vertical-align: middle;
   background-color: transparent;
-  padding: 1.7rem 2rem;
 
   .media {
     margin-bottom: 0.8rem !important;

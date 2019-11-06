@@ -1,20 +1,22 @@
 import React from "dependency/react";
 import ReactDOM from "dependency/react-dom";
-
-import "./index.scss";
 import BgParticles from "components/BgParticles";
 import Navigation from "components/Navigation";
 import Introduction from "components/Introduction";
 import Projects from "components/Projects";
 import Footer from "components/Footer";
 
+import "./index.scss";
+
 ReactDOM.render(
   <div className="hero">
     <BgParticles />
-    <Navigation />
-    <Introduction />
-    <Projects />
-    <Footer />
+    <div className="Wrapper">
+      <Navigation />
+      <Introduction />
+      <Projects />
+      <Footer />
+    </div>
   </div>,
   document.getElementById("root")
 );

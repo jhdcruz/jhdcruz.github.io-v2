@@ -6,9 +6,10 @@ import projects from "../assets/json/projects.json";
 export default class Projects extends Component {
   render() {
     return (
-      <>
-        <h2>Projects</h2>
-        <div className="ProjectsList columns">
+      <div className="ContentWrapper">
+        <h2 className="has-text-centered">Projects</h2>
+        <hr />
+        <div className="ProjectsList columns" id="projects">
           <div className="card column">
             <div className="card-content">
               <div className="media">
@@ -104,7 +105,7 @@ export default class Projects extends Component {
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }

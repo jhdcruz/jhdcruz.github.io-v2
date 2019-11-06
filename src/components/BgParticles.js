@@ -10,9 +10,7 @@ function bgParticles() {
     <Particles
       className="particles-container"
       canvasClassName="particle-bg"
-      height="100%"
-      width="100%"
-      className="particle-bg"
+      className="bgparticles"
       params={particlesConfig}
     />
   );
