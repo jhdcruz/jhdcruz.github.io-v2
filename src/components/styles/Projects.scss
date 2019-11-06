@@ -1,5 +1,6 @@
 .ContentWrapper {
-  margin: 40vh auto;
+  margin: 10vh auto 53vh auto;
+  padding: 1rem 3rem;
 }
 
 h2 {
@@ -29,6 +30,10 @@ hr {
   padding: 0.9rem auto !important;
 }
 
+.card-content {
+  padding: 1.5rem 2rem;
+}
+
 .card {
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   vertical-align: middle;
@@ -36,6 +41,7 @@ hr {
 
   .media {
     margin-bottom: 0.8rem !important;
+    align-items: center;
   }
 
   .Icon {
@@ -44,21 +50,26 @@ hr {
 
   .title {
     font-family: yeysk, sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     color: #fff;
   }
 
   .content {
     color: #ececec;
+    margin-bottom: 1rem !important;
   }
 
   .button {
     font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
-    margin: auto 5px;
+    margin: 3px 0;
     color: #fff;
     border-color: #fff;
     background-color: transparent;
     vertical-align: middle;
+
+    svg {
+      margin: auto 6px auto auto;
+    }
   }
 
   .button.is-hovered,

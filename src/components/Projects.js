@@ -6,10 +6,10 @@ import projects from "../assets/json/projects.json";
 export default class Projects extends Component {
   render() {
     return (
-      <div className="ContentWrapper">
+      <div className="ContentWrapper" id="projects">
         <h2 className="has-text-centered">Projects</h2>
         <hr />
-        <div className="ProjectsList columns" id="projects">
+        <div className="ProjectsList columns">
           <div className="card column">
             <div className="card-content">
               <div className="media">
@@ -24,6 +24,7 @@ export default class Projects extends Component {
               </div>
 
               <div className="content">{projects.about_me.description}</div>
+              <label className="label">{projects.about_me.category}</label>
 
               <div className="field is-grouped">
                 <a
@@ -31,6 +32,7 @@ export default class Projects extends Component {
                   className="button is-outlined redirect"
                   id="Link"
                 >
+                  <i className="fas fa-code-branch"></i>
                   Source
                 </a>
               </div>
@@ -58,6 +60,9 @@ export default class Projects extends Component {
               <div className="content">
                 {projects.desktop_messenger.description}
               </div>
+              <label className="label">
+                {projects.desktop_messenger.category}
+              </label>
 
               <div className="field is-grouped">
                 <a
@@ -65,6 +70,7 @@ export default class Projects extends Component {
                   className="button is-outlined redirect"
                   id="Link"
                 >
+                  <i className="fas fa-code-branch"></i>
                   Source
                 </a>
               </div>
@@ -92,6 +98,9 @@ export default class Projects extends Component {
               <div className="content">
                 {projects.desktop_messages.description}
               </div>
+              <label className="label">
+                {projects.desktop_messages.category}
+              </label>
 
               <div className="field is-grouped">
                 <a
@@ -99,6 +108,7 @@ export default class Projects extends Component {
                   className="button is-outlined redirect"
                   id="Link"
                 >
+                  <i className="fas fa-code-branch"></i>
                   Source
                 </a>
               </div>
