@@ -9,12 +9,13 @@ function Contact() {
       <h2 className="has-text-centered" id="contacts">
         Contact
       </h2>
-      <hr />>
+      <hr />
       <form
         name="contact"
         method="POST"
         data-netlify-recaptcha="true"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="contact" />
         <div className="field is-horizontal">
@@ -24,7 +25,12 @@ function Contact() {
           <div className="field-body">
             <div className="field">
               <p className="control is-expanded has-icons-left">
-                <input className="input" type="text" placeholder="John Doe" />
+                <input
+                  className="input"
+                  type="text"
+                  placeholder="John Doe"
+                  required
+                />
                 <span className="icon is-small is-left">
                   <i className="fas fa-user"></i>
                 </span>
@@ -36,6 +42,7 @@ function Contact() {
                   className="input"
                   type="email"
                   placeholder="johndoe@gmail.com"
+                  required
                 />
                 <span className="icon is-small is-left">
                   <i className="fas fa-envelope"></i>
@@ -53,7 +60,7 @@ function Contact() {
             <div className="field is-narrow">
               <div className="control">
                 <div className="select is-fullwidth">
-                  <select>
+                  <select required>
                     <option>Business development</option>
                     <option>Marketing</option>
                     <option>Sales</option>
@@ -75,6 +82,7 @@ function Contact() {
                   className="input"
                   type="text"
                   placeholder="e.g. We would like you to make something for us"
+                  required
                 />
               </div>
             </div>
@@ -90,7 +98,8 @@ function Contact() {
               <div className="control">
                 <textarea
                   className="textarea"
-                  placeholder="Explain how we can help you"
+                  placeholder="How can I help you?"
+                  required
                 ></textarea>
               </div>
               <p className="help">

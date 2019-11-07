@@ -3,7 +3,7 @@
 }
 
 form {
-  padding: 0 6rem 0 0;
+  padding: 1.3rem 6rem 0 0;
   .field {
     .label {
       color: white;
@@ -15,12 +15,48 @@ form {
     }
 
     .control,
+    .input,
+    select,
+    textarea {
+      font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+      color: #fff;
+      background-color: transparent;
+      vertical-align: middle;
+
+      :focus {
+        border-color: #3273dc;
+      }
+    }
+
     .button {
       font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+      margin: 3px 0;
       color: #fff;
       border-color: #fff;
       background-color: transparent;
       vertical-align: middle;
     }
+
+    .button.is-hovered,
+    .button:hover {
+      border-color: #3273dc;
+      color: #3273dc;
+    }
+  }
+
+  // Form's placeholders color changer
+  ::placeholder {
+    color: #fff !important;
+    opacity: 0.9 !important;
+  }
+
+  ::placeholder {
+    color: #fff !important;
+    opacity: 0.9 !important;
+  }
+
+  ::placeholder {
+    color: #fff !important;
+    opacity: 0.9 !important;
   }
 }
