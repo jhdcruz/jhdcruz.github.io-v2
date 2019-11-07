@@ -10,13 +10,7 @@ function Contact() {
         Contact
       </h2>
       <hr />
-      <form
-        name="contact"
-        method="POST"
-        data-netlify-recaptcha="true"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
+      <form name="contact" method="POST" data-netlify-recaptcha="true" netlify>
         <input type="hidden" name="form-name" value="contact" />
         <div className="field is-horizontal">
           <div className="field-label is-normal">
