@@ -1,15 +1,33 @@
 import React, { Component } from "react";
 
-import "./styles/Projects.scss";
 import projects from "../assets/json/projects.json";
+import AOS from "dependency/aos/dist/aos";
+import "dependency/aos/dist/aos.css";
+import "./styles/Projects.scss";
 
 export default class Projects extends Component {
+  componentWillMount() {
+    AOS.init({
+      duration: 1450
+    });
+  }
+
   render() {
     return (
       <div className="ContentWrapper" id="projects">
-        <h2 className="has-text-centered">Projects</h2>
+        <h2
+          className="has-text-centered"
+          data-aos="fade-in"
+          data-aos-duration="2500"
+        >
+          Projects
+        </h2>
         <hr />
-        <div className="ProjectsList columns">
+        <div
+          className="ProjectsList columns"
+          data-aos="fade-in"
+          data-aos-delay="1500"
+        >
           <div className="card column">
             <div className="card-content">
               <div className="media">

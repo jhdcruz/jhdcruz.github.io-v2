@@ -1,6 +1,5 @@
 import React from "react";
 
-import "animate.css";
 import "./styles/Footer.scss";
 
 function Footer() {
