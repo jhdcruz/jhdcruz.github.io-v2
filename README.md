@@ -10,6 +10,13 @@ Major revamp of the [old website UI](https://github.com/jhdcruz/jhdcruz.github.i
 
 Featuring new UI Design; lessened distracting objects.
 
+## Roadmap
+
+- [ ] Animate on scroll (`AOS` Library)
+- [ ] Recent Contribution component
+- [ ] Beyond `1336x768` screen resolution support
+- [ ] `styled-jsx` implementation
+
 ## License
 
 This work is licensed under [MIT License](https://github.com/jhdcruz/jhdcruz.github.io/blob/master/LICENSE.txt).
