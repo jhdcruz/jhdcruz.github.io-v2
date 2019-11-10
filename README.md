@@ -14,6 +14,7 @@ Featuring new UI Design; lessened distracting objects.
 
 - [ ] Animate on scroll (`AOS` Library)
 - [ ] Recent Contribution component
+- [ ] WakaTime Graph
 - [ ] Beyond `1336x768` screen resolution support
 - [ ] `styled-jsx` implementation
 
