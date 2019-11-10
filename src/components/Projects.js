@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 
 import projects from "../assets/json/projects.json";
 import AOS from "dependency/aos/dist/aos";
@@ -17,23 +17,19 @@ export default class Projects extends Component {
       <div className="ContentWrapper" id="projects">
         <h2
           className="has-text-centered"
-          data-aos="fade-in"
-          data-aos-duration="2500"
         >
           Projects
         </h2>
-        <hr />
+        <hr/>
         <div
           className="ProjectsList columns"
-          data-aos="fade-in"
-          data-aos-delay="1500"
         >
           <div className="card column">
             <div className="card-content">
               <div className="media">
                 <div className="media-left">
                   <figure className="image is-32x32">
-                    <img className="Icon" src={projects.about_me.icon} />
+                    <img className="Icon" src={projects.about_me.icon}/>
                   </figure>
                 </div>
                 <div className="media-content">
@@ -50,7 +46,7 @@ export default class Projects extends Component {
                   className="button is-outlined redirect"
                   id="Link"
                 >
-                  <i className="fas fa-code-branch"></i>
+                  <i className="fas fa-code-branch"/>
                   Source
                 </a>
               </div>
@@ -88,7 +84,7 @@ export default class Projects extends Component {
                   className="button is-outlined redirect"
                   id="Link"
                 >
-                  <i className="fas fa-code-branch"></i>
+                  <i className="fas fa-code-branch"/>
                   Source
                 </a>
               </div>
@@ -126,7 +122,7 @@ export default class Projects extends Component {
                   className="button is-outlined redirect"
                   id="Link"
                 >
-                  <i className="fas fa-code-branch"></i>
+                  <i className="fas fa-code-branch"/>
                   Source
                 </a>
               </div>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 
 import AOS from "dependency/aos/dist/aos";
 import "dependency/aos/dist/aos.css";
@@ -25,7 +25,7 @@ export default class Introduction extends Component {
               data-aos="fade-in"
               data-aos-delay="1100"
             >
-              <i className="fab fa-git-alt"></i>
+              <i className="fab fa-git-alt"/>
               Projects & Contributions
             </a>
             <a
@@ -34,7 +34,7 @@ export default class Introduction extends Component {
               data-aos="fade-in"
               data-aos-delay="1100"
             >
-              <i className="fas fa-envelope"></i>
+              <i className="fas fa-envelope"/>
               Contact
             </a>
           </div>

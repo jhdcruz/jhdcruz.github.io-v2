@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 
 import AOS from "dependency/aos/dist/aos";
 import "dependency/aos/dist/aos.css";
@@ -15,16 +15,14 @@ export default class Contact extends Component {
         <h2 className="has-text-centered" id="contacts">
           Contact
         </h2>
-        <hr />
+        <hr/>
         <form
           name="contact"
           method="POST"
           data-netlify-recaptcha="true"
           data-netlify="true"
-          data-aos="fade-in"
-          data-aos-delay="1500"
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="contact"/>
           <div className="field is-horizontal">
             <div className="field-label is-normal">
               <label className="label">From</label>
@@ -39,7 +37,7 @@ export default class Contact extends Component {
                     required
                   />
                   <span className="icon is-small is-left">
-                    <i className="fas fa-user"></i>
+                    <i className="fas fa-user"/>
                   </span>
                 </p>
               </div>
@@ -52,7 +50,7 @@ export default class Contact extends Component {
                     required
                   />
                   <span className="icon is-small is-left">
-                    <i className="fas fa-envelope"></i>
+                    <i className="fas fa-envelope"/>
                   </span>
                 </p>
               </div>
@@ -107,7 +105,7 @@ export default class Contact extends Component {
                     className="textarea"
                     placeholder="How can I help you?"
                     required
-                  ></textarea>
+                  />
                 </div>
                 <p className="help">
                   Information that are submitted are kept confidential.
@@ -117,7 +115,7 @@ export default class Contact extends Component {
           </div>
 
           <div className="field is-horizontal">
-            <div className="field-label"></div>
+            <div className="field-label"/>
             <div className="field-body">
               <div className="field">
                 <div className="control">
@@ -125,7 +123,7 @@ export default class Contact extends Component {
                     Submit
                   </button>
                 </div>
-                <div data-netlify-recaptcha="true"></div>
+                <div data-netlify-recaptcha="true"/>
               </div>
             </div>
           </div>

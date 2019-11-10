@@ -4,20 +4,20 @@ import BgParticles from "components/BgParticles";
 import Navigation from "components/Navigation";
 import Introduction from "components/Introduction";
 import Projects from "components/Projects";
-import Contact from "./components/Contact";
+import Contact from "components/Contact";
 import Footer from "components/Footer";
 
 import "./index.scss";
 
 ReactDOM.render(
   <div className="hero">
-    <BgParticles />
+    <BgParticles/>
     <div className="Wrapper">
-      <Navigation />
-      <Introduction />
-      <Projects />
-      <Contact />
-      <Footer />
+      <Navigation/>
+      <Introduction/>
+      <Projects/>
+      <Contact/>
+      <Footer/>
     </div>
   </div>,
   document.getElementById("root")
