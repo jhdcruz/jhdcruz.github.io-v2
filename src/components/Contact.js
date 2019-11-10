@@ -1,14 +1,8 @@
 import React, {Component} from "react";
 
-import AOS from "dependency/aos/dist/aos";
-import "dependency/aos/dist/aos.css";
 import "./styles/Contact.scss";
 
 export default class Contact extends Component {
-  componentWillMount() {
-    AOS.init();
-  }
-
   render() {
     return (
       <div className="container" id="ContactForm">
@@ -66,9 +60,9 @@ export default class Contact extends Component {
                 <div className="control">
                   <div className="select is-fullwidth">
                     <select required>
-                      <option>Business development</option>
-                      <option>Marketing</option>
-                      <option>Sales</option>
+                      <option>General</option>
+                      <option>Feedback</option>
+                      <option>Contract</option>
                     </select>
                   </div>
                 </div>
