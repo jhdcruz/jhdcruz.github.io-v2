@@ -4,7 +4,7 @@ import "bulma/css/bulma.min.css";
 import brand from "images/HERO.svg";
 import "./styles/Navigation.scss";
 
-function Navigation() {
+export default function Navigation() {
   function navActive() {
     const navBurger = document.querySelector(".navbar-burger");
     const navMenu = document.querySelector(".navbar-menu");
@@ -52,5 +52,3 @@ function Navigation() {
     </div>
   );
 }
-
-export default Navigation;

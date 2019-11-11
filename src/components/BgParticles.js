@@ -5,7 +5,7 @@ import particlesConfig from "config/particlesjs-config.json";
 
 import "./styles/BgParticles.scss";
 
-function bgParticles() {
+export default function bgParticles() {
   return (
     <Particles
       canvasClassName="particle-bg"
@@ -14,5 +14,3 @@ function bgParticles() {
     />
   );
 }
-
-export default bgParticles;

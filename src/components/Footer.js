@@ -2,7 +2,7 @@ import React from "react";
 
 import "./styles/Footer.scss";
 
-function Footer() {
+export default function Footer() {
   return (
     <div className="hero-footer">
       <div className="container has-text-centered">
@@ -16,5 +16,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;
