@@ -12,7 +12,7 @@ Featuring new UI Design; lessened distracting objects.
 
 ## Roadmap
 
-- [ ] Recent Contribution component
+- [x] Recent Contribution component
 - [ ] Beyond `1336x768` screen resolution support
 - [ ] `styled-jsx` implementation
 
