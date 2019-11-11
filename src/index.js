@@ -1,5 +1,8 @@
+// High Level imports
 import React from "dependency/react";
 import ReactDOM from "dependency/react-dom";
+
+// Component imports
 import BgParticles from "components/BgParticles";
 import Navigation from "components/Navigation";
 import Introduction from "components/Introduction";
@@ -8,6 +11,7 @@ import Contributions from "./components/Contributions";
 import Contact from "components/Contact";
 import Footer from "components/Footer";
 
+import "dependency/bulma/css/bulma.min.css";
 import "./index.scss";
 
 ReactDOM.render(
