@@ -1,12 +1,10 @@
-@font-face {
-  font-family: yeysk;
-  src: url("./assets/fonts/yeysk.otf");
-}
-
 /*
 Also available:
- font-family: 'Kanit', sans-serif;
- https://fonts.googleapis.com/css?family=Kanit&display=swap
+font-family: 'Kanit', sans-serif;
+https://fonts.googleapis.com/css?family=Kanit&display=swap
+
+! This is pre-configured
+! Ready to use
 */
 
 body,
@@ -15,7 +13,7 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: yeysk, sans-serif !important;
+  font-family: Kanit, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #111;
@@ -30,4 +28,9 @@ html {
 .hero {
   margin: 0;
   padding: 0;
+}
+
+h2.has-text-centered {
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }

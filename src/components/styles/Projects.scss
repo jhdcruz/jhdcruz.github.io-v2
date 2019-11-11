@@ -1,5 +1,5 @@
 .ContentWrapper {
-  margin: 10vh auto 53vh auto;
+  margin: 50vh auto 50vh auto;
   padding: 1rem 3rem;
 }
 
@@ -49,8 +49,9 @@ hr {
   }
 
   .title {
-    font-family: yeysk, sans-serif;
+    text-transform: uppercase;
     font-size: 16px;
+    letter-spacing: 0.8px;
     color: #fff;
   }
 
@@ -60,7 +61,7 @@ hr {
   }
 
   .label {
-    color: #ebebebd0;
+    color: #8f8f8fd0;
     font-weight: 600;
     font-style: italic;
   }

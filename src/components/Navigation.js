@@ -43,6 +43,9 @@ export default function Navigation() {
             <a href="#projects" className="navbar-item">
               Projects
             </a>
+            <a href="#contributions" className="navbar-item">
+              Contributions
+            </a>
             <a href="#contacts" className="navbar-item">
               Contact
             </a>
