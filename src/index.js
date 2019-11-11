@@ -11,13 +11,13 @@ import "./index.scss";
 
 ReactDOM.render(
   <div className="hero">
-    <BgParticles/>
+    <BgParticles />
     <div className="Wrapper">
-      <Navigation/>
-      <Introduction/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
+      <Navigation />
+      <Introduction />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   </div>,
   document.getElementById("root")

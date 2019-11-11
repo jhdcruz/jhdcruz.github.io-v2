@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 import "./styles/Introduction.scss";
 
@@ -13,18 +13,12 @@ export default class Introduction extends Component {
             deserunt anim fugiat reprehenderit.
           </h2>
           <div className="field is-grouped">
-            <a
-              href="#projects"
-              className="button is-outlined"
-            >
-              <i className="fab fa-git-alt"/>
+            <a href="#projects" className="button is-outlined">
+              <i className="fab fa-git-alt" />
               Projects & Contributions
             </a>
-            <a
-              href="#contact"
-              className="button is-outlined"
-            >
-              <i className="fas fa-envelope"/>
+            <a href="#contact" className="button is-outlined">
+              <i className="fas fa-envelope" />
               Contact
             </a>
           </div>

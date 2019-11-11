@@ -22,7 +22,7 @@ function Navigation() {
       >
         <div className="navbar-brand">
           <a className="navbar-item branding" href="/">
-            <img src={brand} alt="H E R O" width="85" height="auto"/>
+            <img src={brand} alt="H E R O" width="85" height="auto" />
           </a>
 
           <a
@@ -32,9 +32,9 @@ function Navigation() {
             aria-expanded="false"
             onClick={navActive}
           >
-            <span aria-hidden="true"/>
-            <span aria-hidden="true"/>
-            <span aria-hidden="true"/>
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
           </a>
         </div>
 

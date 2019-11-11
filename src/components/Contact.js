@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 import "./styles/Contact.scss";
 
@@ -9,14 +9,14 @@ export default class Contact extends Component {
         <h2 className="has-text-centered" id="contacts">
           Contact
         </h2>
-        <hr/>
+        <hr />
         <form
           name="contact"
           method="POST"
           data-netlify-recaptcha="true"
           data-netlify="true"
         >
-          <input type="hidden" name="form-name" value="contact"/>
+          <input type="hidden" name="form-name" value="contact" />
           <div className="field is-horizontal">
             <div className="field-label is-normal">
               <label className="label">From</label>
@@ -31,7 +31,7 @@ export default class Contact extends Component {
                     required
                   />
                   <span className="icon is-small is-left">
-                    <i className="fas fa-user"/>
+                    <i className="fas fa-user" />
                   </span>
                 </p>
               </div>
@@ -44,7 +44,7 @@ export default class Contact extends Component {
                     required
                   />
                   <span className="icon is-small is-left">
-                    <i className="fas fa-envelope"/>
+                    <i className="fas fa-envelope" />
                   </span>
                 </p>
               </div>
@@ -109,7 +109,7 @@ export default class Contact extends Component {
           </div>
 
           <div className="field is-horizontal">
-            <div className="field-label"/>
+            <div className="field-label" />
             <div className="field-body">
               <div className="field">
                 <div className="control">
@@ -117,7 +117,7 @@ export default class Contact extends Component {
                     Submit
                   </button>
                 </div>
-                <div data-netlify-recaptcha="true"/>
+                <div data-netlify-recaptcha="true" />
               </div>
             </div>
           </div>
