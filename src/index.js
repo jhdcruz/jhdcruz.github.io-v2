@@ -4,6 +4,7 @@ import BgParticles from "components/BgParticles";
 import Navigation from "components/Navigation";
 import Introduction from "components/Introduction";
 import Projects from "components/Projects";
+import Contributions from "./components/Contributions";
 import Contact from "components/Contact";
 import Footer from "components/Footer";
 
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Navigation />
       <Introduction />
       <Projects />
+      <Contributions />
       <Contact />
       <Footer />
     </div>
