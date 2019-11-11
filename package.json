@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "bulma": "0.8.0",
+    "bulma-timeline": "^3.0.4",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-particles-js": "^2.7.0"
