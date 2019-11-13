@@ -12,7 +12,7 @@ export default function Contributions() {
       <hr />
       <div className="timeline is-centered">
         <header className="timeline-header">
-          <span className="tag is-medium is-link">LATEST</span>
+          <span className="tag is-medium is-link">2019</span>
         </header>
         <div className="timeline-item is-link">
           <div className="timeline-marker is-info is-icon">
