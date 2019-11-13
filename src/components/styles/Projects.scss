@@ -1,5 +1,5 @@
 .ContentWrapper {
-  margin: 50vh auto 50vh auto;
+  margin: 50vh auto 18vh auto;
   padding: 1rem 3rem;
 }
 
@@ -38,6 +38,9 @@ hr {
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   vertical-align: middle;
   background-color: transparent;
+  margin: 0 auto;
+  flex-grow: 0;
+  flex-basis: auto;
 
   .media {
     margin-bottom: 0.8rem !important;
