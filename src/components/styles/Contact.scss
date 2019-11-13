@@ -7,10 +7,10 @@ form {
   .field {
     .label {
       color: white;
+      text-transform: uppercase;
     }
 
     .help {
-      font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
       color: #adadad;
     }
 
@@ -18,9 +18,8 @@ form {
     .input,
     select,
     textarea {
-      font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
       color: #fff;
-      background-color: transparent;
+      background-color: rgba(0, 0, 0, 0.3);
       vertical-align: middle;
 
       :focus {
@@ -33,7 +32,6 @@ form {
     }
 
     .button {
-      font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
       margin: 3px 0;
       color: #fff;
       border-color: #fff;
