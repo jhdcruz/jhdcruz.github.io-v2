@@ -1,0 +1,9 @@
+{
+  "y2019": {
+    "date": "October 2019",
+    "repo": "Boostnote",
+    "repo_link": "https://github.com/BoostIO/Boostnote",
+    "title": "Fix throwing of exception on multiple instances",
+    "pr_link": "https://github.com/BoostIO/Boostnote/pull/3243"
+  }
+}
