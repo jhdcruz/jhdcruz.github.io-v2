@@ -3,7 +3,7 @@ import React from "react";
 import "dependency/bulma-timeline/dist/css/bulma-timeline.min.css";
 import "./styles/Contributions.scss";
 
-import contribution from "../assets/json/contributions.json";
+import contribution from "data/contributions.json";
 
 export default function Contributions() {
   return (

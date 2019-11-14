@@ -10,7 +10,7 @@ module.exports = {
     modules: ["node_modules"],
     alias: {
       images: path.join(__dirname, "./src/assets/img"),
-      config: path.join(__dirname, "./src/assets/json"),
+      data: path.join(__dirname, "./src/assets/data"),
       components: path.join(__dirname, "./src/components"),
       dependency: path.join(__dirname, "node_modules")
     }

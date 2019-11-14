@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import projects from "../assets/json/projects.json";
+import projects from "data/projects.json";
 import "./styles/Projects.scss";
 
 export default class Projects extends Component {
