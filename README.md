@@ -13,7 +13,12 @@ Featuring new UI Design; lessened distracting objects.
 ## Roadmap
 
 - [x] Recent Contribution component
+- [ ] SVG Branding rework
+- [ ] Contact submission container
+- [ ] Mobile Layout
 - [ ] Beyond `1336x768` screen resolution support
+
+**Optional:**
 - [ ] `styled-jsx` implementation
 
 ## License
