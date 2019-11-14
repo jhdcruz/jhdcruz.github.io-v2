@@ -35,6 +35,14 @@ export default class Projects extends Component {
                   <i className="fas fa-code-branch" />
                   Source
                 </a>
+                <a
+                  href={projects.about_me.preview}
+                  className="button is-outlined redirect"
+                  id="Link"
+                >
+                  <i className="fas fa-globe" />
+                  Preview
+                </a>
               </div>
             </div>
           </div>
