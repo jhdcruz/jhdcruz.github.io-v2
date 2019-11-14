@@ -17,7 +17,7 @@ export default class Introduction extends Component {
               <i className="fab fa-git-alt" />
               Projects & Contributions
             </a>
-            <a href="#contact" className="button is-outlined">
+            <a href="#contacts" className="button is-outlined">
               <i className="fas fa-envelope" />
               Contact
             </a>
