@@ -11,7 +11,7 @@ export default function Contact() {
       <hr />
       <form
         action="https://send.pageclip.co/JZD6iGzQPMMrmy6xu1EaaeqSPjOwv9yE/Contact"
-        class="pageclip-form"
+        className="pageclip-form"
         method="post"
       >
         >
