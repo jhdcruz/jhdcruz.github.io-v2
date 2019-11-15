@@ -10,12 +10,11 @@ export default function Contact() {
       </h2>
       <hr />
       <form
-        name="contact"
-        method="POST"
-        data-netlify-recaptcha="true"
-        data-netlify="true"
+        action="https://send.pageclip.co/JZD6iGzQPMMrmy6xu1EaaeqSPjOwv9yE/Contact"
+        class="pageclip-form"
+        method="post"
       >
-        <input type="hidden" name="form-name" value="contact" />
+        >
         <div className="field is-horizontal">
           <div className="field-label is-normal">
             <label className="label">From</label>
@@ -27,6 +26,7 @@ export default function Contact() {
                   className="input"
                   type="text"
                   placeholder="John Doe"
+                  name="name"
                   required
                 />
                 <span className="icon is-small is-left">
@@ -39,6 +39,7 @@ export default function Contact() {
                 <input
                   className="input"
                   type="email"
+                  name="email"
                   placeholder="johndoe@gmail.com"
                   required
                 />
@@ -49,7 +50,6 @@ export default function Contact() {
             </div>
           </div>
         </div>
-
         <div className="field is-horizontal">
           <div className="field-label is-normal">
             <label className="label">Purpose</label>
@@ -58,7 +58,7 @@ export default function Contact() {
             <div className="field is-narrow">
               <div className="control">
                 <div className="select is-fullwidth">
-                  <select required>
+                  <select name="category" required>
                     <option>General</option>
                     <option>Feedback</option>
                     <option>Contract</option>
@@ -68,7 +68,6 @@ export default function Contact() {
             </div>
           </div>
         </div>
-
         <div className="field is-horizontal">
           <div className="field-label is-normal">
             <label className="label">Subject</label>
@@ -79,6 +78,7 @@ export default function Contact() {
                 <input
                   className="input"
                   type="text"
+                  name="subject"
                   placeholder="e.g. We would like you to make something for us"
                   required
                 />
@@ -86,7 +86,6 @@ export default function Contact() {
             </div>
           </div>
         </div>
-
         <div className="field is-horizontal">
           <div className="field-label is-normal">
             <label className="label">Message</label>
@@ -96,6 +95,7 @@ export default function Contact() {
               <div className="control">
                 <textarea
                   className="textarea"
+                  name="message"
                   placeholder="How can I help you?"
                   required
                 />
@@ -106,17 +106,19 @@ export default function Contact() {
             </div>
           </div>
         </div>
-
         <div className="field is-horizontal">
           <div className="field-label" />
           <div className="field-body">
             <div className="field">
               <div className="control">
-                <button className="button is-outlined" type="submit">
-                  Submit
+                <button
+                  className="button is-outlined pageclip-form__submit"
+                  type="submit"
+                  value="Send"
+                >
+                  <span>Submit</span>
                 </button>
               </div>
-              <div data-netlify-recaptcha="true" />
             </div>
           </div>
         </div>
