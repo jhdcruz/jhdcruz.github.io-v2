@@ -27,11 +27,11 @@
 
   .navbar-item {
     color: white;
+  }
 
-    :hover {
-      color: #3273dc;
-      border-bottom: 1px solid white;
-    }
+  :hover,
+  .active {
+    border-top: 2px solid #eeeeee;
   }
 }
 
