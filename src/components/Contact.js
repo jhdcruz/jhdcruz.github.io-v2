@@ -1,5 +1,6 @@
 import React from "react";
 
+import "dependency/bulma/css/bulma.min.css";
 import "./styles/Contact.scss";
 
 export default function Contact() {
