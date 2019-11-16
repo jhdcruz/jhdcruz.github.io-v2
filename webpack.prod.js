@@ -43,11 +43,12 @@ module.exports = merge(common, {
           content: "Front-End Web Developer, Open-Source Enthusiast."
         },
         {
-          name: "author",
+          name: "owner",
           content: "Joshua Hero Dela Cruz (Aegir Aideron)"
         },
         {
-          viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+          name: "viewport",
+          content: "width=device-width, initial-scale=1, shrink-to-fit=no"
         }
       ],
       googleAnalytics: {
