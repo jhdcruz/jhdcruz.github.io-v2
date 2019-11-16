@@ -57,5 +57,18 @@ module.exports = merge(common, {
     }),
     new InlineManifestWebpackPlugin(),
     new DashboardPlugin()
-  ]
+  ],
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/i,
+          chunks: "all"
+        }
+      }
+    },
+    runtimeChunk: {
+      name: "runtime"
+    }
+  }
 });
