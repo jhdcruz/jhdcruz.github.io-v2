@@ -3,9 +3,9 @@ import React from "dependency/react";
 import ReactDOM from "dependency/react-dom";
 
 // * Components Import
-import Wrapper from "./Wrapper";
-import BgParticles from "components/BgParticles";
-import Footer from "components/Footer";
+import Wrapper from "components/Wrapper";
+import BgParticles from "components/BgParticles/BgParticles";
+import Footer from "components/Footer/Footer";
 
 // * Assets Import
 import "./index.scss";
