@@ -14,6 +14,7 @@ Featuring new UI Design; lessened distracting objects.
 
 - [x] Recent Contribution component
 - [x] Contact submission container
+- [x] React-router-dom integration (SPA)
 - [ ] SVG Branding rework
 - [ ] Mobile Layout
 - [ ] Beyond `1336x768` screen resolution support
