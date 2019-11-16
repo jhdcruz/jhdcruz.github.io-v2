@@ -25,8 +25,13 @@
 .navbar-end {
   margin-right: 125px;
 
-  :hover {
-    border-bottom: 1px solid whitesmoke;
+  .navbar-item {
+    color: white;
+
+    :hover {
+      color: #3273dc;
+      border-bottom: 1px solid white;
+    }
   }
 }
 

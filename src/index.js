@@ -1,30 +1,23 @@
-// High Level imports
+// ! High Level imports
 import React from "dependency/react";
 import ReactDOM from "dependency/react-dom";
+import "dependency/bulma/css/bulma.min.css";
 
-// Component imports
+// * Components Import
+import Wrapper from "./Wrapper";
 import BgParticles from "components/BgParticles";
-import Navigation from "components/Navigation";
-import Introduction from "components/Introduction";
-import Projects from "components/Projects";
-import Contributions from "./components/Contributions";
-import Contact from "components/Contact";
 import Footer from "components/Footer";
 
-import "dependency/bulma/css/bulma.min.css";
+// * Assets Import
 import "./index.scss";
 
 ReactDOM.render(
-  <div className="hero">
+  <>
     <BgParticles />
-    <div className="Wrapper">
-      <Navigation />
-      <Introduction />
-      <Projects />
-      <Contributions />
-      <Contact />
+    <div id="mainContent">
+      <Wrapper />
       <Footer />
     </div>
-  </div>,
+  </>,
   document.getElementById("root")
 );

@@ -6,7 +6,7 @@ import "./styles/Projects.scss";
 export default class Projects extends Component {
   render() {
     return (
-      <div className="ContentWrapper" id="projects">
+      <div className="ContentWrapper hero-body" id="projects">
         <h2 className="has-text-centered">Projects</h2>
         <hr />
         <div className="ProjectsList columns">
@@ -123,6 +123,7 @@ export default class Projects extends Component {
             </div>
           </div>
         </div>
+        <hr />
       </div>
     );
   }
