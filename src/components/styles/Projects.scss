@@ -70,12 +70,13 @@ hr {
 
   .button {
     margin: 3px 6px auto 0;
+    padding: calc(0.5em - 1px) 0.8em;
     color: #fff;
     border-color: #fff;
     background-color: transparent;
     vertical-align: middle;
 
-    svg {
+    i {
       margin: auto 6px auto auto;
     }
   }
