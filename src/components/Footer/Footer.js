@@ -1,7 +1,7 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
 
-import "./styles/Footer.scss";
+import "./Footer.scss";
 
 export default function Footer() {
   return (

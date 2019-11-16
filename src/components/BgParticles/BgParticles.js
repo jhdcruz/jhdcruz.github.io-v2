@@ -1,9 +1,9 @@
 import React from "react";
 
 import Particles from "react-particles-js";
-import particlesConfig from "data/particlesjs-config.json";
+import particlesConfig from "./particlesjs-config.json";
 
-import "./styles/BgParticles.scss";
+import "./BgParticles.scss";
 
 export default function bgParticles() {
   return (

@@ -9,8 +9,7 @@ module.exports = {
   resolve: {
     modules: ["node_modules"],
     alias: {
-      images: path.join(__dirname, "./src/assets/img"),
-      data: path.join(__dirname, "./src/assets/data"),
+      images: path.join(__dirname, "./src/shared/img"),
       components: path.join(__dirname, "./src/components"),
       dependency: path.join(__dirname, "node_modules")
     }
@@ -31,7 +30,7 @@ module.exports = {
             loader: "sass-loader",
             options: {
               sassOptions: {
-                fiber: false,
+                fibers: false,
                 outputStyle: "compressed"
               }
             }

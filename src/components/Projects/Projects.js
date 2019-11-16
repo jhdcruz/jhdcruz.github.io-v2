@@ -1,8 +1,8 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
 
-import "./styles/Projects.scss";
-import projects from "data/projects";
+import "./Projects.scss";
+import projects from "./data";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function Projects() {

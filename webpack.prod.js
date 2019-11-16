@@ -12,7 +12,7 @@ module.exports = merge(common, {
       hash: true,
       template: require("html-webpack-template"),
       title: "About me | Joshua Hero Dela Cruz",
-      favicon: "./src/assets/img/icon.png",
+      favicon: "./src/shared/img/icon.png",
       appMountId: "root",
       mobile: true,
       lang: "en-US",
