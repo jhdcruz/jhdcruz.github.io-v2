@@ -2,7 +2,7 @@
 
 #### Status:
 
-[![CodeFactor](https://www.codefactor.io/repository/github/jhdcruz/jhdcruz.github.io-v2/badge)](https://www.codefactor.io/repository/github/jhdcruz/jhdcruz.github.io-v2) [![Build Status](https://travis-ci.com/jhdcruz/jhdcruz.github.io-v2.svg?token=fiiouVpFksoACZRN1N2B&branch=master)](https://travis-ci.com/jhdcruz/jhdcruz.github.io-v2)
+[![CodeFactor](https://www.codefactor.io/repository/github/jhdcruz/jhdcruz.github.io-v2/badge)](https://www.codefactor.io/repository/github/jhdcruz/jhdcruz.github.io-v2) [![Build Status](https://travis-ci.com/jhdcruz/jhdcruz.github.io-v2.svg?token=fiiouVpFksoACZRN1N2B&branch=master)](https://travis-ci.com/jhdcruz/jhdcruz.github.io-v2) [![Coding time tracker](https://wakatime.com/badge/github/jhdcruz/jhdcruz.github.io-v2.svg)](https://wakatime.com/badge/github/jhdcruz/jhdcruz.github.io-v2)
 
 ---
 
