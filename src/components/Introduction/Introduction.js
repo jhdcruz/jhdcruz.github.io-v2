@@ -13,17 +13,17 @@ export default function Introduction() {
       <div className="container">
         <h1 className="title">Front-End Web Development</h1>
         <h2 className="subtitle">
-          Duis cillum cillum voluptate voluptate minim proident fugiat deserunt
-          anim fugiat reprehenderit.
+          Your high-quality, modern, and elegant web design solution. Built with
+          UX in mind.
         </h2>
         <div className="field is-grouped">
           <NavLink to="/projects" className="button is-outlined">
             <i className="fab fa-git-alt" />
-            Projects & Contributions
+            My Projects
           </NavLink>
           <NavLink to="/contact" className="button is-outlined">
             <i className="fas fa-envelope" />
-            Contact
+            Inquire Now
           </NavLink>
         </div>
       </div>
