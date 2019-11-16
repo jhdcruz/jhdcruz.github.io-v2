@@ -18,23 +18,6 @@ module.exports = merge(common, {
       appMountId: "root",
       mobile: true,
       lang: "en-US",
-      links: [
-        {
-          href: "https://fonts.googleapis.com/css?family=Kanit&display=swap",
-          rel: "stylesheet"
-        },
-        {
-          rel: "stylesheet",
-          href: "https://s.pageclip.co/v1/pageclip.css",
-          media: "screen"
-        }
-      ],
-      scripts: [
-        {
-          src: "https://s.pageclip.co/v1/pageclip.js",
-          charset: "utf-8"
-        }
-      ],
       meta: [
         {
           name: "description",
@@ -47,6 +30,24 @@ module.exports = merge(common, {
         {
           name: "viewport",
           content: "width=device-width, initial-scale=1, shrink-to-fit=no"
+        }
+      ],
+      links: [
+        {
+          rel: "preload",
+          href: "https://fonts.googleapis.com/css?family=Kanit&display=swap",
+          as: "font"
+        },
+        {
+          rel: "stylesheet",
+          href: "https://s.pageclip.co/v1/pageclip.css",
+          media: "screen"
+        }
+      ],
+      scripts: [
+        {
+          src: "https://s.pageclip.co/v1/pageclip.js",
+          charset: "utf-8"
         }
       ],
       googleAnalytics: {

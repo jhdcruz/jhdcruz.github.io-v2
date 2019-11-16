@@ -2,6 +2,7 @@ const merge = require("webpack-merge");
 const common = require("./webpack.common");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const InlineManifestWebpackPlugin = require("inline-manifest-webpack-plugin");
+const DashboardPlugin = require("webpack-dashboard/plugin");
 
 module.exports = merge(common, {
   mode: "production",
@@ -16,6 +17,21 @@ module.exports = merge(common, {
       mobile: true,
       lang: "en-US",
       showErrors: false,
+      meta: [
+        {
+          name: "description",
+          content: "Front-End Web Developer, Open-Source Enthusiast."
+        },
+        {
+          name: "owner",
+          content: "Joshua Hero Dela Cruz (Aegir Aideron)"
+        },
+        {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1, shrink-to-fit=no"
+        }
+      ],
+
       links: [
         {
           href: "https://fonts.googleapis.com/css?family=Kanit&display=swap",
@@ -33,26 +49,13 @@ module.exports = merge(common, {
           charset: "utf-8"
         }
       ],
-      meta: [
-        {
-          name: "description",
-          content: "Front-End Web Developer, Open-Source Enthusiast."
-        },
-        {
-          name: "owner",
-          content: "Joshua Hero Dela Cruz (Aegir Aideron)"
-        },
-        {
-          name: "viewport",
-          content: "width=device-width, initial-scale=1, shrink-to-fit=no"
-        }
-      ],
       googleAnalytics: {
         trackingId: "UA-131928651-1",
         pageViewOnLoad: true
       },
       inlineManifestWebpackName: "webpackManifest"
     }),
-    new InlineManifestWebpackPlugin()
+    new InlineManifestWebpackPlugin(),
+    new DashboardPlugin()
   ]
 });
