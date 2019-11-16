@@ -1,7 +1,6 @@
 // ! High Level imports
 import React from "dependency/react";
 import ReactDOM from "dependency/react-dom";
-import "dependency/bulma/css/bulma.min.css";
 
 // * Components Import
 import Wrapper from "./Wrapper";

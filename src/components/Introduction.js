@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Route, NavLink } from "react-router-dom";
 
 import "./styles/Introduction.scss";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 import Projects from "components/Projects";
 import Contact from "components/Contact";
 

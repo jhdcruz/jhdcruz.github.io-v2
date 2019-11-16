@@ -31,10 +31,6 @@ module.exports = merge(common, {
       ],
       scripts: [
         {
-          src: "https://kit.fontawesome.com/13430cf332.js",
-          crossorigin: "anonymous"
-        },
-        {
           src: "https://s.pageclip.co/v1/pageclip.js",
           charset: "utf-8"
         }
