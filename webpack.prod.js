@@ -2,7 +2,6 @@ const merge = require("webpack-merge");
 const common = require("./webpack.common");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const InlineManifestWebpackPlugin = require("inline-manifest-webpack-plugin");
-const DashboardPlugin = require("webpack-dashboard/plugin");
 
 module.exports = merge(common, {
   mode: "production",
@@ -55,20 +54,6 @@ module.exports = merge(common, {
       },
       inlineManifestWebpackName: "webpackManifest"
     }),
-    new InlineManifestWebpackPlugin(),
-    new DashboardPlugin()
-  ],
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        vendors: {
-          test: /[\\/]node_modules[\\/]/i,
-          chunks: "all"
-        }
-      }
-    },
-    runtimeChunk: {
-      name: "runtime"
-    }
-  }
+    new InlineManifestWebpackPlugin()
+  ]
 });
