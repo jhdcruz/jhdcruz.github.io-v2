@@ -34,8 +34,8 @@ function mapStyles(styles) {
 // wrap the `spring` helper to use a bouncy config
 function bounce(val) {
   return spring(val, {
-    stiffness: 330,
-    damping: 22
+    stiffness: 360,
+    damping: 44
   });
 }
 
