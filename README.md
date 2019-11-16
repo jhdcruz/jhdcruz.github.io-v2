@@ -2,7 +2,7 @@
 
 #### Status:
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/855b71ad-f06d-42ab-9d06-2e3576eb6ff9/deploy-status)](https://app.netlify.com/sites/jhdcruz-v2/deploys) [![Build Status](https://travis-ci.com/jhdcruz/jhdcruz.github.io-v2.svg?token=fiiouVpFksoACZRN1N2B&branch=master)](https://travis-ci.com/jhdcruz/jhdcruz.github.io-v2)
+[![CodeFactor](https://www.codefactor.io/repository/github/jhdcruz/jhdcruz.github.io-v2/badge)](https://www.codefactor.io/repository/github/jhdcruz/jhdcruz.github.io-v2) [![Build Status](https://travis-ci.com/jhdcruz/jhdcruz.github.io-v2.svg?token=fiiouVpFksoACZRN1N2B&branch=master)](https://travis-ci.com/jhdcruz/jhdcruz.github.io-v2)
 
 ---
 
@@ -20,6 +20,7 @@ Featuring new UI Design; lessened distracting objects.
 - [ ] Beyond `1336x768` screen resolution support
 
 **Optional:**
+
 - [ ] `styled-jsx` implementation
 
 ## License
