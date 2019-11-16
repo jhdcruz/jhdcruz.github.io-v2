@@ -43,7 +43,7 @@ module.exports = {
         use: "file-loader"
       },
       {
-        test: /\.(ttf|otf)$/,
+        test: /\.(ttf|otf|eot|woff|woff2)$/,
         use: "file-loader"
       }
     ]
