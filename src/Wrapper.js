@@ -1,5 +1,7 @@
 import React from "react";
 import { Route, NavLink, HashRouter } from "react-router-dom";
+import { AnimatedSwitch, spring } from "react-router-transition";
+import "dependency/bulma/css/bulma.min.css";
 
 // * Components Import
 import Intro from "components/Introduction";
@@ -10,8 +12,6 @@ import Contact from "components/Contact";
 // * Assets Imports
 import "./Wrapper.scss";
 import brand from "images/HERO.svg";
-import "dependency/bulma/css/bulma.min.css";
-import { AnimatedSwitch, spring } from "react-router-transition";
 
 // Hamburger Menu toggler
 function navActive() {
