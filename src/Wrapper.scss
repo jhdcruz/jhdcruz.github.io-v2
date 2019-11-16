@@ -35,6 +35,15 @@
   }
 }
 
+// Transition Holder
+.routerContent {
+  position: relative;
+}
+
+.routerContent > div {
+  position: absolute;
+}
+
 @media screen and (max-width: 1024px) {
   .navbar-item {
     text-align: right;
