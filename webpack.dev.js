@@ -26,10 +26,6 @@ module.exports = merge(common, {
         {
           name: "owner",
           content: "Joshua Hero Dela Cruz (Aegir Aideron)"
-        },
-        {
-          name: "viewport",
-          content: "width=device-width, initial-scale=1, shrink-to-fit=no"
         }
       ],
       links: [

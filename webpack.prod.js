@@ -24,10 +24,6 @@ module.exports = merge(common, {
         {
           name: "owner",
           content: "Joshua Hero Dela Cruz (Aegir Aideron)"
-        },
-        {
-          name: "viewport",
-          content: "width=device-width, initial-scale=1, shrink-to-fit=no"
         }
       ],
       links: [
@@ -39,13 +35,13 @@ module.exports = merge(common, {
         {
           rel: "stylesheet",
           href: "https://s.pageclip.co/v1/pageclip.css",
-          media: "screen",
+          media: "screen"
         }
       ],
       scripts: [
         {
           src: "https://s.pageclip.co/v1/pageclip.js",
-          charset: "utf-8",
+          charset: "utf-8"
         }
       ],
       googleAnalytics: {
