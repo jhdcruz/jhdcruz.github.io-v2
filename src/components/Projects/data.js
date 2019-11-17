@@ -5,7 +5,8 @@ export default [
     title: "About Me | Portfolio",
     description: "Revamp of the personal portfolio website | Current Website",
     link: "https://github.com/jhdcruz/jhdcruz.github.io",
-    category: "ReactJS, SCSS"
+    category: "ReactJS, SCSS",
+    preview: "https://jhdcruzgithubio-v2.jhdcrux.now.sh/"
   },
   {
     id: "2",
