@@ -1,22 +1,29 @@
 import React from "react";
 import { Route, NavLink } from "react-router-dom";
 
-import "./Introduction.scss";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-
 import Projects from "components/Projects/Projects";
 import Contact from "components/Contact/Contact";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
+import {
+  ContentWrapper,
+  Welcome,
+  Profession,
+  Subtitle
+} from "./Introduction.styled";
 
 export default function Introduction() {
   return (
-    <div className="hero-body">
+    <ContentWrapper className="hero-body">
       <div className="container">
-        <h2 className="identity">Hello there, I'm Joshua Hero,</h2>
-        <h1 className="header">A Front-End Web Developer & Designer</h1>
-        <h2 className="subtitle">
+        <Welcome className="identity">Hello there, I'm Joshua Hero,</Welcome>
+        <Profession className="header">
+          A Front-End Web Developer & Designer
+        </Profession>
+        <Subtitle className="subtitle">
           A passionate web developer of hiqh-quality, modern & elegant web
           designs.
-        </h2>
+        </Subtitle>
         <div className="field is-grouped">
           <NavLink to="/projects" className="button is-outlined">
             <i className="fab fa-git-alt" />
@@ -32,6 +39,6 @@ export default function Introduction() {
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
       </div>
-    </div>
+    </ContentWrapper>
   );
 }
