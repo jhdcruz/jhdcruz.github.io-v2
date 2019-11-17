@@ -1,24 +1,31 @@
 import React from "react";
-
 import "dependency/bulma/css/bulma.min.css";
-import "./Contact.scss";
+
+import {
+  GlobalStyle,
+  Title,
+  Line,
+  ContactForm,
+  Form,
+  Label,
+  Notice,
+  Button
+} from "./Contact.styled";
 
 export default function Contact() {
   return (
-    <div className="container" id="ContactForm">
-      <h2 className="has-text-centered" id="contacts">
-        Contact
-      </h2>
-      <hr />
-      <form
+    <ContactForm className="container">
+      <Title>Contact</Title>
+      <Line />
+      <Form
         action="https://send.pageclip.co/JZD6iGzQPMMrmy6xu1EaaeqSPjOwv9yE/Contact"
         className="pageclip-form"
         method="post"
       >
-        >
+        <GlobalStyle />
         <div className="field is-horizontal">
           <div className="field-label is-normal">
-            <label className="label">From</label>
+            <Label className="label">From</Label>
           </div>
           <div className="field-body">
             <div className="field">
@@ -53,7 +60,7 @@ export default function Contact() {
         </div>
         <div className="field is-horizontal">
           <div className="field-label is-normal">
-            <label className="label">Purpose</label>
+            <Label className="label">Purpose</Label>
           </div>
           <div className="field-body">
             <div className="field is-narrow">
@@ -71,7 +78,7 @@ export default function Contact() {
         </div>
         <div className="field is-horizontal">
           <div className="field-label is-normal">
-            <label className="label">Subject</label>
+            <Label className="label">Subject</Label>
           </div>
           <div className="field-body">
             <div className="field">
@@ -89,7 +96,7 @@ export default function Contact() {
         </div>
         <div className="field is-horizontal">
           <div className="field-label is-normal">
-            <label className="label">Message</label>
+            <Label className="label">Message</Label>
           </div>
           <div className="field-body">
             <div className="field">
@@ -101,9 +108,9 @@ export default function Contact() {
                   required
                 />
               </div>
-              <p className="help">
+              <Notice>
                 Information that are submitted are kept confidential.
-              </p>
+              </Notice>
             </div>
           </div>
         </div>
@@ -112,18 +119,18 @@ export default function Contact() {
           <div className="field-body">
             <div className="field">
               <div className="control">
-                <button
+                <Button
                   className="button is-outlined pageclip-form__submit"
                   type="submit"
                   value="Send"
                 >
                   <span>Submit</span>
-                </button>
+                </Button>
               </div>
             </div>
           </div>
         </div>
-      </form>
-    </div>
+      </Form>
+    </ContactForm>
   );
 }
