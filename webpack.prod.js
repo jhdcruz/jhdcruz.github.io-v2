@@ -30,22 +30,22 @@ module.exports = merge(common, {
           content: "width=device-width, initial-scale=1, shrink-to-fit=no"
         }
       ],
-
       links: [
         {
+          rel: "preload",
           href: "https://fonts.googleapis.com/css?family=Kanit&display=swap",
-          rel: "stylesheet"
+          as: "style"
         },
         {
           rel: "stylesheet",
           href: "https://s.pageclip.co/v1/pageclip.css",
-          media: "screen"
+          media: "screen",
         }
       ],
       scripts: [
         {
           src: "https://s.pageclip.co/v1/pageclip.js",
-          charset: "utf-8"
+          charset: "utf-8",
         }
       ],
       googleAnalytics: {
