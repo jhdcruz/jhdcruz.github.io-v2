@@ -1,18 +1,26 @@
 .hero-body {
   padding: 2rem 1.5rem;
-  margin: 20vh 7.2vw;
+  margin: 17.4vh 7.2vw;
 
   .container {
-    .title {
+    .identity {
+      color: #b4b4b4;
+      font-weight: 300;
+      margin: 0 0 4px 0;
+    }
+
+    .header {
       font-weight: 600;
       color: whitesmoke;
       text-transform: uppercase;
       font-size: 49px;
+      line-height: 1.1;
     }
 
     .subtitle {
       color: #b4b4b4;
       font-weight: 300;
+      margin: 4.5px 0 16px 0;
     }
 
     .is-outlined {

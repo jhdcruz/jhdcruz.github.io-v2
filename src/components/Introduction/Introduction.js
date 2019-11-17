@@ -11,10 +11,11 @@ export default function Introduction() {
   return (
     <div className="hero-body">
       <div className="container">
-        <h1 className="title">Front-End Web Development & Design</h1>
+        <h2 className="identity">Hello there, I'm Joshua Hero,</h2>
+        <h1 className="header">A Front-End Web Developer & Designer</h1>
         <h2 className="subtitle">
-          Hi, my name is Joshua Dela Cruz. A passionate web developer of modern
-          & elegant web designs.
+          A passionate web developer of hiqh-quality, modern & elegant web
+          designs.
         </h2>
         <div className="field is-grouped">
           <NavLink to="/projects" className="button is-outlined">
