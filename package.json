@@ -11,13 +11,15 @@
     "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
     "bulma": "0.8.0",
     "bulma-timeline": "^3.0.4",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-particles-js": "^2.7.0",
     "react-router-dom": "^5.1.2",
-    "react-router-transition": "^2.0.0"
+    "react-router-transition": "^2.0.0",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
