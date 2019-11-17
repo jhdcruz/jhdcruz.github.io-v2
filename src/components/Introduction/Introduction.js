@@ -11,10 +11,10 @@ export default function Introduction() {
   return (
     <div className="hero-body">
       <div className="container">
-        <h1 className="title">Front-End Web Development</h1>
+        <h1 className="title">Front-End Web Development & Design</h1>
         <h2 className="subtitle">
-          Your high-quality, modern, and elegant web design solution. Built with
-          UX in mind.
+          Hi, my name is Joshua Dela Cruz. A passionate web developer of modern
+          & elegant web designs.
         </h2>
         <div className="field is-grouped">
           <NavLink to="/projects" className="button is-outlined">
