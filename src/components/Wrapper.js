@@ -90,11 +90,11 @@ export default function Wrapper() {
           {/* Router Links */}
           <div className="navbar-menu">
             <div className="navbar-end">
-              <NavLink to="/projects" className="navbar-item">
-                Projects
-              </NavLink>
               <NavLink to="/about" className="navbar-item">
                 About
+              </NavLink>
+              <NavLink to="/projects" className="navbar-item">
+                Projects
               </NavLink>
               <NavLink to="/contact" className="navbar-item">
                 Contact
@@ -115,8 +115,8 @@ export default function Wrapper() {
           >
             {/* Router Contents */}
             <Route exact path="/" component={Intro} />
-            <Route path="/projects" component={Projects} />
             <Route path="/about" component={About} />
+            <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
           </AnimatedSwitch>
         </div>
