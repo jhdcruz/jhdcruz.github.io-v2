@@ -1,3 +1,18 @@
+/**
+ *
+ * ! Add new projects here instead of manually tampering the actual code `Projects.js`
+ * ! Each project/id will be automatically be mapped to the website
+ *
+ * * FORMAT:
+ * ?   /@id\           - specifies the map/order (ascending order)
+ * ?  /@icon\          - for the project
+ * ?  /@title\         - of the project
+ * ?  /@description\   - of the title
+ * ?  /@link\          - of the project source
+ * ?  /@category\      - labels for the project, such as languages
+ * ?  /@preview\       - of the project (applicable if it is a website)
+ */
+
 export default [
   {
     id: "1",
