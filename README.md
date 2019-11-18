@@ -21,7 +21,7 @@ Featuring new UI Design; lessened distracting objects.
 
 **Optional:**
 
-- [ ] `styled-jsx` implementation
+- [x] `styled-components` implementation
 
 ## License
 
