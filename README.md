@@ -18,6 +18,7 @@ Featuring new UI Design; lessened distracting objects.
 - [ ] SVG Branding rework
 - [ ] Mobile Layout
 - [ ] Beyond `1336x768` screen resolution support
+- [ ] Code Documentation
 
 **Optional:**
 
