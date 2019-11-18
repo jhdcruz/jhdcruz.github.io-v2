@@ -5,19 +5,21 @@
   "author": "Aegir Aideron <jhdcruz@vivaldi.net>",
   "private": true,
   "scripts": {
-    "lint": "prettier \"src/**/**/*.{html,scss,js,jsx}\" --write && eslint \"src/**/*.{js,jsx}\" && stylelint \"src/**/**/*.{scss,css}\"",
+    "lint": "prettier \"src/**/**/*.{html,scss,js,jsx}\" --write && eslint \"src/**/**/*.{js,jsx}\" && stylelint ./src/**/**/*.js",
     "test": "echo \"Test under development!\"",
     "start": "webpack-dev-server --mode development --open --config webpack.dev.js --hot",
     "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
     "bulma": "0.8.0",
     "bulma-timeline": "^3.0.4",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-particles-js": "^2.7.0",
     "react-router-dom": "^5.1.2",
-    "react-router-transition": "^2.0.0"
+    "react-router-transition": "^2.0.0",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
@@ -52,7 +54,10 @@
     "style-loader": "^1.0.0",
     "stylelint": "^11.1.1",
     "stylelint-config-prettier": "^6.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-custom-processor-loader": "^0.6.0",
     "stylelint-prettier": "^1.1.1",
+    "stylelint-processor-styled-components": "^1.8.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
     "webpack-dashboard": "^3.2.0",

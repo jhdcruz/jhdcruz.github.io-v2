@@ -22,6 +22,11 @@ module.exports = {
         use: "babel-loader"
       },
       {
+        test: /\.(js|jsx)$/,
+        loader: "stylelint-custom-processor-loader",
+        exclude: /node_modules/
+      },
+      {
         test: /\.(css|scss)$/,
         use: [
           "style-loader",

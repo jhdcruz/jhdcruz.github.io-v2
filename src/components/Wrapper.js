@@ -10,8 +10,16 @@ import About from "components/About/About";
 import Contact from "components/Contact/Contact";
 
 // * Assets Imports
-import "./Wrapper.scss";
 import brand from "images/HERO.svg";
+
+import {
+  RouterWrapper,
+  NavBar,
+  NavStyles,
+  NavLeft,
+  WebBrand,
+  NavRight
+} from "./Wrapper.styled";
 
 // ? Hamburger Menu toggler
 function navActive() {
@@ -60,18 +68,19 @@ export default function Wrapper() {
   return (
     <div className="hero-head">
       <HashRouter>
-        <nav
+        <NavBar
           className="navbar is-transparent"
           role="navigation"
           aria-label="main navigation"
         >
+          <NavStyles />
           {/* Website Brand | Home */}
-          <div className="navbar-brand">
-            <li className="navbar-item branding">
+          <NavLeft className="navbar-brand">
+            <WebBrand className="navbar-item branding">
               <NavLink to="/">
                 <img src={brand} alt="H E R O" width="85" height="auto" />
               </NavLink>
-            </li>
+            </WebBrand>
 
             {/* Hamburger Menu */}
             <a
@@ -85,11 +94,11 @@ export default function Wrapper() {
               <span aria-hidden="true" />
               <span aria-hidden="true" />
             </a>
-          </div>
+          </NavLeft>
 
           {/* Router Links */}
           <div className="navbar-menu">
-            <div className="navbar-end">
+            <NavRight className="navbar-end">
               <NavLink to="/about" className="navbar-item">
                 About
               </NavLink>
@@ -99,11 +108,12 @@ export default function Wrapper() {
               <NavLink to="/contact" className="navbar-item">
                 Contact
               </NavLink>
-            </div>
+            </NavRight>
           </div>
-        </nav>
+        </NavBar>
 
         {/* Router Container */}
+        <RouterWrapper />
         <div className="routerContainer">
           {/* Router Transition */}
           <AnimatedSwitch

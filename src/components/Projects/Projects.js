@@ -1,32 +1,45 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
 
-import "./Projects.scss";
 import projects from "./data";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+import {
+  ContentWrapper,
+  Title,
+  Line,
+  ProjectsList,
+  Card,
+  CardContent,
+  CardHeading,
+  Icon,
+  ProjectTitle,
+  ProjectContent,
+  ProjectLabel
+} from "./Projects.styled";
+
 export default function Projects() {
   return (
-    <div className="ContentWrapper hero-body" id="projects">
-      <h2 className="has-text-centered">Projects</h2>
+    <ContentWrapper className=" hero-body">
+      <Title>Projects</Title>
       <hr />
-      <div className="ProjectsList columns">
+      <ProjectsList className="columns">
         {projects.map(project => (
-          <div className="card column" id={project.id}>
-            <div className="card-content">
-              <div className="media">
+          <Card className="card column" key={project.id}>
+            <CardContent className="card-content">
+              <CardHeading className="media">
                 <div className="media-left">
                   <figure className="image is-32x32">
-                    <img className="Icon" src={project.icon} />
+                    <Icon src={project.icon} />
                   </figure>
                 </div>
                 <div className="media-content">
-                  <p className="title is-4">{project.title}</p>
+                  <ProjectTitle className="title">{project.title}</ProjectTitle>
                 </div>
-              </div>
+              </CardHeading>
 
-              <div className="content">{project.description}</div>
-              <label className="label">{project.category}</label>
+              <ProjectContent>{project.description}</ProjectContent>
+              <ProjectLabel className="label">{project.category}</ProjectLabel>
 
               <div className="field is-grouped">
                 <a
@@ -48,11 +61,11 @@ export default function Projects() {
                   </a>
                 )}
               </div>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
         ))}
         <hr />
-      </div>
-    </div>
+      </ProjectsList>
+    </ContentWrapper>
   );
 }

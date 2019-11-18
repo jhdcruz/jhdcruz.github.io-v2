@@ -1,17 +1,33 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
+import styled from "styled-components";
 
-import "./Footer.scss";
+const GitHub = styled.a`
+  font-size: 12.5px;
+  color: #828282;
+  text-align: center;
+  margin: 4px auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  :hover {
+    text-decoration: none;
+    color: #969696;
+    cursor: help;
+  }
+`;
 
 export default function Footer() {
   return (
-    <div className="hero-footer">
-      <a
+    <footer className="hero-footer">
+      <GitHub
         href="https://github.com/jhdcruz/jhdcruz.github.io"
         className="gh-redirect"
       >
         Copyright &copy; 2019 | Joshua Hero Dela Cruz
-      </a>
-    </div>
+      </GitHub>
+    </footer>
   );
 }
