@@ -22,7 +22,7 @@ export default function Projects() {
   return (
     <ContentWrapper className=" hero-body">
       <Title>Projects</Title>
-      <Line />
+      <hr />
       <ProjectsList className="columns">
         {projects.map(project => (
           <Card className="card column" key={project.id}>

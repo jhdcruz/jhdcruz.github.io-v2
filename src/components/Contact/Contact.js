@@ -16,7 +16,7 @@ export default function Contact() {
   return (
     <ContactForm className="container">
       <Title>Contact</Title>
-      <Line />
+      <hr />
       <Form
         action="https://send.pageclip.co/JZD6iGzQPMMrmy6xu1EaaeqSPjOwv9yE/Contact"
         className="pageclip-form"

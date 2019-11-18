@@ -35,23 +35,6 @@ export const GlobalStyle = createGlobalStyle`
 
 `;
 
-export const Line = styled.hr`
-  margin: 10px auto;
-  display: block;
-  border: none;
-  height: 1;
-  border-radius: 15;
-  background: -webkit-gradient(
-    radial,
-    50% 50%,
-    0,
-    50% 50%,
-    580,
-    from(#fff),
-    to(rgba(104, 104, 104, 0.3))
-  );
-`;
-
 export const ContactForm = styled.div`
   margin: 3vh auto;
   padding: 1rem 2.1rem;

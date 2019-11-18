@@ -13,23 +13,6 @@ export const Title = styled.h2`
   letter-spacing: 1.8px;
 `;
 
-export const Line = styled.hr`
-  margin: 10px auto;
-  display: block;
-  border: none;
-  height: 1;
-  border-radius: 15;
-  background: -webkit-gradient(
-    radial,
-    50% 50%,
-    0,
-    50% 50%,
-    580,
-    from(#fff),
-    to(rgba(104, 104, 104, 0.3))
-  );
-`;
-
 export const ProjectsList = styled.div`
   margin: 8 auto;
   padding: 0.9rem auto !important;

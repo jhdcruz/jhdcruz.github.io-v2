@@ -50,6 +50,24 @@ export const GlobalStyle = createGlobalStyle`
     border-color: #3273dc;
     color: #3273dc;
   }
+
+  hr {
+    margin: 10px auto;
+    display: block;
+    border: none;
+    height: 1;
+    border-radius: 15;
+    background: -webkit-gradient(
+      radial,
+      50% 50%,
+      0,
+      50% 50%,
+      580,
+      from(#fff),
+      to(rgba(104, 104, 104, 0.3))
+    );
+  }
+
 `;
 
 const MainContent = styled.div`
