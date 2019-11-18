@@ -78,7 +78,7 @@ ReactDOM.render(
   <>
     <BgParticles />
     <GlobalStyle />
-    <MainContent>
+    <MainContent className="hero">
       <Wrapper />
       <Footer />
     </MainContent>
