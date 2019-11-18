@@ -25,7 +25,7 @@ export default function Projects() {
       <Line />
       <ProjectsList className="columns">
         {projects.map(project => (
-          <Card className="card column" id={project.id}>
+          <Card className="card column" key={project.id}>
             <CardContent className="card-content">
               <CardHeading className="media">
                 <div className="media-left">
