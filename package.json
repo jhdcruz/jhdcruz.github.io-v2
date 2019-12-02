@@ -22,11 +22,11 @@
     "styled-components": "4.4.1"
   },
   "devDependencies": {
-    "@babel/cli": "7.6.4",
-    "@babel/core": "7.6.4",
-    "@babel/plugin-syntax-dynamic-import": "7.2.0",
-    "@babel/preset-env": "7.6.3",
-    "@babel/preset-react": "7.6.3",
+    "@babel/cli": "7.7.4",
+    "@babel/core": "7.7.4",
+    "@babel/plugin-syntax-dynamic-import": "7.7.4",
+    "@babel/preset-env": "7.7.4",
+    "@babel/preset-react": "7.7.4",
     "@fortawesome/fontawesome-free": "5.11.2",
     "babel-jest": "24.9.0",
     "babel-loader": "8.0.6",
