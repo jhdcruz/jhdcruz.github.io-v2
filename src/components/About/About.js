@@ -1,12 +1,13 @@
 import React from "react";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import ProfileImg from "images/icon.png";
-
 import {
   Profile,
   ProfileContent,
   Name,
   PersonalTitle,
+  Social,
   Bio
 } from "./About.styled";
 
@@ -19,6 +20,12 @@ export default function About() {
         <Name>Joshua Hero Dela Cruz</Name>
         <PersonalTitle>A Hobbyist Front-end Web Developer</PersonalTitle>
       </ProfileContent>
+
+      <Social>
+        <i className="fab fa-facebook-square" />
+        <i className="fab fa-github" />
+        <i className="fab fa-keybase" />
+      </Social>
 
       <Bio>
         Exercitation labore ut non est deserunt dolore cupidatat consectetur in

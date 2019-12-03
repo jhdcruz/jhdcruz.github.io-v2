@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 // * Profile Section
+
 export const ProfileContent = styled.div`
   margin: 1.6rem 0;
   display: block;
@@ -24,6 +25,11 @@ export const PersonalTitle = styled.h1`
   font-size: 1.1rem;
   color: #dbdbdb;
   display: block;
+`;
+
+// * Social
+export const Social = styled.div`
+  margin: 5px;
 `;
 
 // * Bio Section

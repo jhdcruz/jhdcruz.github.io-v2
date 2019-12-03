@@ -1,5 +1,6 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import {
   GlobalStyle,
@@ -124,7 +125,9 @@ export default function Contact() {
                   type="submit"
                   value="Send"
                 >
-                  <span>Submit</span>
+                  <span>
+                    <i className="fas fa-paper-plane" /> Submit
+                  </span>
                 </Button>
               </div>
             </div>

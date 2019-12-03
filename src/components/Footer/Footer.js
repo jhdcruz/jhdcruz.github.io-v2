@@ -7,7 +7,7 @@ const GitHub = styled.a`
   color: #828282;
   text-align: center;
   margin: 4px auto;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
