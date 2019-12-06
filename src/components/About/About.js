@@ -3,18 +3,19 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import ProfileImg from "images/icon.png";
 import {
-  Profile,
-  ProfileContent,
-  Name,
-  PersonalTitle,
-  Social,
-  Bio
+  //   Profile,
+  //   ProfileContent,
+  //   Name,
+  //   PersonalTitle,
+  //   Social,
+  //   Bio
+  Maintenance
 } from "./About.styled";
 
 export default function About() {
   return (
     <div className="container">
-      {/* Profile Section */}
+      {/* Profile Section
       <ProfileContent>
         <Profile src={ProfileImg} />
         <Name>Joshua Hero Dela Cruz</Name>
@@ -37,7 +38,10 @@ export default function About() {
         culpa ex laboris id. Officia ipsum duis ad officia eiusmod ullamco
         cupidatat veniam non ea. Quis aliqua nulla id ad elit consectetur. Eu
         dolore ad elit officia occaecat elit.
-      </Bio>
+      </Bio> */}
+
+      {/* Maintenenance Notice */}
+      <Maintenance>Work in Progress...</Maintenance>
     </div>
   );
 }
