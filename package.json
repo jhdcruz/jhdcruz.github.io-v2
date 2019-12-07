@@ -76,10 +76,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jhdcruz/jhdcruz.github.io/"
+    "url": "https://github.com/jhdcruz/jhdcruz.github.io-v2/"
   },
   "bugs": {
-    "url": "https://github.com/jhdcruz/jhdcruz.github.io/issues"
+    "url": "https://github.com/jhdcruz/jhdcruz.github.io-v2/issues"
   },
-  "homepage": "https://jhdcruz-v2.netlify.com"
+  "homepage": "https://jhdcruz.now.sh"
 }
