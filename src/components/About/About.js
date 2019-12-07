@@ -16,17 +16,31 @@ export default function About() {
     <div className="container">
       {/* Profile Section */}
       <ProfileContent>
+        {/* Profile Image */}
         <Profile src={ProfileImg} />
+
+        {/* Personal Info */}
         <Name>Joshua Hero Dela Cruz</Name>
-        <PersonalTitle>A Hobbyist Front-end Web Developer</PersonalTitle>
+        <PersonalTitle>A Front-end Web Developer & Designer</PersonalTitle>
+
+        {/* Social Media / Contact */}
+        <Social>
+          <a href="https://m.me/jhdcruz">
+            <i className="fab fa-facebook-messenger" />
+          </a>
+          <a href="https://github.com/jhdcruz">
+            <i className="fab fa-github" />
+          </a>
+          <a href="https://stackoverflow.com/users/7976244/aegir-aideron?tab=profile">
+            <i class="fab fa-stack-overflow" />
+          </a>
+          <a href="https://keybase.io/jhdcruz">
+            <i className="fab fa-keybase" />
+          </a>
+        </Social>
       </ProfileContent>
 
-      <Social>
-        <i className="fab fa-facebook-square" />
-        <i className="fab fa-github" />
-        <i className="fab fa-keybase" />
-      </Social>
-
+      {/* Biography / Introduction */}
       <Bio>
         Exercitation labore ut non est deserunt dolore cupidatat consectetur in
         nostrud sit nisi est laboris. Duis ad elit do consequat. Mollit nisi ut
