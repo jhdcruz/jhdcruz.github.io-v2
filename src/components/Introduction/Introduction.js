@@ -18,7 +18,7 @@ export default function Introduction() {
       <div className="container">
         <Welcome className="identity">Hello there, I'm Joshua Hero,</Welcome>
         <Profession className="header">
-          A Front-End Web Developer & Designer
+          A Front-End Web Developer & Designer.
         </Profession>
         <Subtitle className="subtitle">
           A passionate web developer of hiqh-quality, modern & elegant web
@@ -31,7 +31,7 @@ export default function Introduction() {
           </NavLink>
           <NavLink to="/contact" className="button is-outlined">
             <i className="fas fa-envelope" />
-            Inquire Now
+            Contact me
           </NavLink>
         </div>
       </div>
