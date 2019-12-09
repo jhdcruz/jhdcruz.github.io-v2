@@ -20,7 +20,7 @@ export default [
     title: "About Me | Portfolio",
     description: "Revamp of the personal portfolio website | Current Website",
     link: "https://github.com/jhdcruz/jhdcruz.github.io",
-    category: "ReactJS, SCSS",
+    category: "ReactJS (Manual Setup)",
     preview: "https://jhdcruzgithubio-v2.jhdcrux.now.sh/"
   },
   {
@@ -29,7 +29,7 @@ export default [
     title: "Desktop Messenger",
     description: "Facebook Messenger for Desktop w/ Frameless window.",
     link: "https://github.com/jhdcruz/Desktop-Messenger",
-    category: "Electron, JavaScript, NSIS"
+    category: "Electron, NSIS"
   },
   {
     id: "3",
@@ -37,6 +37,6 @@ export default [
     title: "Desktop Messages",
     description: "Google's Android Messages for Desktop w/ Frameless Window",
     link: "https://github.com/jhdcruz/Desktop-Messages",
-    category: "Electron, JavaScript, NSIS"
+    category: "Electron, NSIS"
   }
 ];
