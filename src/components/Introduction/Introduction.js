@@ -1,16 +1,12 @@
 import React from "react";
-import { Route, NavLink } from "react-router-dom";
-
+import {NavLink, Route} from "react-router-dom";
+// noinspection NpmUsedModulesInstalled
 import Projects from "components/Projects/Projects";
+// noinspection NpmUsedModulesInstalled
 import Contact from "components/Contact/Contact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import {
-  ContentWrapper,
-  Welcome,
-  Profession,
-  Subtitle
-} from "./Introduction.styled";
+import {ContentWrapper, Profession, Subtitle, Welcome} from "./Introduction.styled";
 
 export default function Introduction() {
   return (

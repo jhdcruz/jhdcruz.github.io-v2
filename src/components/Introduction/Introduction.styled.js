@@ -5,6 +5,7 @@ export const ContentWrapper = styled.div`
   margin: 17.4vh 7.2vw;
 `;
 
+// noinspection JSUnresolvedFunction
 export const Welcome = styled.h5`
   color: #b4b4b4;
   font-weight: 300;
@@ -12,6 +13,7 @@ export const Welcome = styled.h5`
   font-size: 16px;
 `;
 
+// noinspection JSUnresolvedFunction
 export const Profession = styled.h4`
   font-weight: 600;
   color: whitesmoke;
@@ -20,6 +22,7 @@ export const Profession = styled.h4`
   line-height: 1.1;
 `;
 
+// noinspection JSUnresolvedFunction
 export const Subtitle = styled.h6`
   color: #b4b4b4;
   font-weight: 300;

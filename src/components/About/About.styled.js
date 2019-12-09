@@ -17,12 +17,14 @@ export const Profile = styled.img`
   display: block;
 `;
 
+// noinspection JSUnresolvedFunction
 export const Name = styled.h1`
   font-size: 1.8rem;
   line-height: 1;
   display: block;
 `;
 
+// noinspection JSUnresolvedFunction
 export const PersonalTitle = styled.h1`
   font-size: 1.1rem;
   margin: 2px;

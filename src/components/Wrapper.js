@@ -1,25 +1,21 @@
 import React from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
-import { AnimatedSwitch, spring } from "react-router-transition";
+import {HashRouter, NavLink, Route} from "react-router-dom";
+import {AnimatedSwitch, spring} from "react-router-transition";
 import "dependency/bulma/css/bulma.min.css";
-
 // * Components Import
+// noinspection NpmUsedModulesInstalled
 import Intro from "components/Introduction/Introduction";
+// noinspection NpmUsedModulesInstalled
 import Projects from "components/Projects/Projects";
+// noinspection NpmUsedModulesInstalled
 import About from "components/About/About";
+// noinspection NpmUsedModulesInstalled
 import Contact from "components/Contact/Contact";
-
 // * Assets Imports
+// noinspection NpmUsedModulesInstalled
 import brand from "images/HERO.svg";
 
-import {
-  RouterWrapper,
-  NavBar,
-  NavStyles,
-  NavLeft,
-  WebBrand,
-  NavRight
-} from "./Wrapper.styled";
+import {NavBar, NavLeft, NavRight, NavStyles, RouterWrapper, WebBrand} from "./Wrapper.styled";
 
 // ? Hamburger Menu toggler
 function navActive() {

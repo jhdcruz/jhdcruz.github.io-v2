@@ -1,14 +1,14 @@
 // ! High Level imports
+// noinspection NpmUsedModulesInstalled
 import React from "dependency/react";
+// noinspection NpmUsedModulesInstalled
 import ReactDOM from "dependency/react-dom";
-
 // * Components Import
 import Wrapper from "components/Wrapper";
 import BgParticles from "components/BgParticles/BgParticles";
 import Footer from "components/Footer/Footer";
-
 // * Assets Import
-import styled, { createGlobalStyle } from "styled-components";
+import styled, {createGlobalStyle} from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   body,
@@ -17,7 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     margin: 0;
     padding: 0;
-    font-display: auto;
     font-family: "Kanit", "Segoe UI", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -55,8 +54,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 10px auto;
     display: block;
     border: none;
-    height: 1;
-    border-radius: 15;
+    height: 1px;
+    border-radius: 15px;
     background: -webkit-gradient(
       radial,
       50% 50%,

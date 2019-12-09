@@ -1,17 +1,10 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
+// noinspection NpmUsedModulesInstalled
 import ProfileImg from "images/icon.png";
-import {
-  Profile,
-  ProfileContent,
-  Name,
-  PersonalTitle,
-  Social,
-  Bio
-} from "./About.styled";
+import {Bio, Name, PersonalTitle, Profile, ProfileContent, Social} from "./About.styled";
 
-export default function About() {
+export default function About(){
   return (
     <div className="container">
       {/* Profile Section */}
@@ -32,7 +25,7 @@ export default function About() {
             <i className="fab fa-github" />
           </a>
           <a href="https://stackoverflow.com/users/7976244/aegir-aideron?tab=profile">
-            <i class="fab fa-stack-overflow" />
+            <i className="fab fa-stack-overflow" />
           </a>
           <a href="https://keybase.io/jhdcruz">
             <i className="fab fa-keybase" />
@@ -55,3 +48,4 @@ export default function About() {
     </div>
   );
 }
+

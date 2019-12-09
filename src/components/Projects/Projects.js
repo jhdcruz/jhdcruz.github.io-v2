@@ -5,17 +5,16 @@ import projects from "./data";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import {
-  ContentWrapper,
-  Title,
-  Line,
-  ProjectsList,
   Card,
   CardContent,
   CardHeading,
+  ContentWrapper,
   Icon,
-  ProjectTitle,
   ProjectContent,
-  ProjectLabel
+  ProjectLabel,
+  ProjectsList,
+  ProjectTitle,
+  Title
 } from "./Projects.styled";
 
 export default function Projects() {

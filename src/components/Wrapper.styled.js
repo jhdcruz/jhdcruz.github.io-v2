@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, {createGlobalStyle} from "styled-components";
 
 export const RouterWrapper = createGlobalStyle`
   .routerContent {
@@ -21,6 +21,7 @@ export const NavStyles = createGlobalStyle`
   }
 `;
 
+// noinspection JSUnresolvedFunction
 export const NavBar = styled.nav`
   margin-bottom: 30px;
 
@@ -34,6 +35,7 @@ export const NavLeft = styled.div`
   margin-right: 135px;
 `;
 
+// noinspection JSUnresolvedFunction
 export const WebBrand = styled.li`
   margin-left: 100px;
 `;

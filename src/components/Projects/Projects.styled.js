@@ -5,6 +5,7 @@ export const ContentWrapper = styled.div`
   padding: 1rem 3rem;
 `;
 
+// noinspection JSUnresolvedFunction
 export const Title = styled.h2`
   color: white;
   font-size: 22px;
@@ -14,7 +15,7 @@ export const Title = styled.h2`
 `;
 
 export const ProjectsList = styled.div`
-  margin: 8 auto;
+  margin: 8px auto;
   padding: 0.9rem auto !important;
 `;
 
@@ -39,6 +40,7 @@ export const Icon = styled.img`
   border-radius: 25%;
 `;
 
+// noinspection JSUnresolvedFunction
 export const ProjectTitle = styled.h4`
   text-transform: uppercase;
   font-size: 17.6px;
