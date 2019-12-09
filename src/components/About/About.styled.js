@@ -58,4 +58,5 @@ export const Bio = styled.div`
   margin: 0.5em 6em;
   padding: 0.8em 3em;
   color: white;
+  text-align: center;
 `;

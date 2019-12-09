@@ -2,7 +2,7 @@ import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 // noinspection NpmUsedModulesInstalled
 import ProfileImg from "images/icon.png";
-import {Bio, Name, PersonalTitle, Profile, ProfileContent, Social} from "./About.styled";
+import { Bio, Name, PersonalTitle, Profile, ProfileContent, Social } from "./About.styled";
 
 export default function About(){
   return (
@@ -39,11 +39,6 @@ export default function About(){
         nostrud sit nisi est laboris. Duis ad elit do consequat. Mollit nisi ut
         ea ea commodo est consectetur fugiat nulla ex. Sunt ad id quis nisi in
         enim laborum ea proident duis qui commodo.
-        <br />
-        Ea occaecat quis occaecat aliqua dolore exercitation non id officia
-        culpa ex laboris id. Officia ipsum duis ad officia eiusmod ullamco
-        cupidatat veniam non ea. Quis aliqua nulla id ad elit consectetur. Eu
-        dolore ad elit officia occaecat elit.
       </Bio>
     </div>
   );
