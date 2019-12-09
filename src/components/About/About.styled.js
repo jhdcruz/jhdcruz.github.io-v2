@@ -55,8 +55,18 @@ export const Social = styled.div`
 // * Bio Section
 
 export const Bio = styled.div`
-  margin: 0.5em 6em;
+  margin: 0.5em auto;
   padding: 0.8em 3em;
   color: white;
-  text-align: center;
+  text-align: justify;
+`;
+
+// * Skill Section
+
+export const Skillset = styled.div`
+  color: white;
+  margin: 8px auto;
+  padding: 0 5rem;
+  text-align: justify;
+
 `;
