@@ -4,4 +4,4 @@
 - [ ] Educational Background
 - [ ] Relevant/Proficient Skills
 - [ ] Viewable Resume
-- [ ] Social Media Profiles
+- [x] Social Media Profiles
