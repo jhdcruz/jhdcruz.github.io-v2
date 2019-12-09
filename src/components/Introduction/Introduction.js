@@ -1,12 +1,12 @@
 import React from "react";
-import {NavLink, Route} from "react-router-dom";
+import { NavLink, Route } from "react-router-dom";
 // noinspection NpmUsedModulesInstalled
 import Projects from "components/Projects/Projects";
 // noinspection NpmUsedModulesInstalled
 import Contact from "components/Contact/Contact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import {ContentWrapper, Profession, Subtitle, Welcome} from "./Introduction.styled";
+import { ContentWrapper, Profession, Subtitle, Welcome } from "./Introduction.styled";
 
 export default function Introduction() {
   return (
@@ -17,7 +17,7 @@ export default function Introduction() {
           A Front-End Web Developer & Designer.
         </Profession>
         <Subtitle className="subtitle">
-          A passionate web developer of hiqh-quality, modern & elegant web
+          A passionate web developer of minimalistic, modern & elegant web
           designs.
         </Subtitle>
         <div className="field is-grouped">
