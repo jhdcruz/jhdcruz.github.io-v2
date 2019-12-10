@@ -1,0 +1,22 @@
+{
+  "FrontEnd": [
+    "JavaScript (ES5+)",
+    "ReactJS 16+",
+    "Electron Framework 5+"
+  ],
+  "Design": [
+    "Flat & Material UI",
+    "Adobe XD",
+    "Figma",
+    "Photoshop CS6/CC"
+  ],
+  "Services": [
+    "TravisCI",
+    "CircleCI",
+    "Sentry"
+  ],
+  "Others": [
+    "Git VCS",
+    "Linux OS"
+  ]
+}
