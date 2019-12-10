@@ -3,7 +3,6 @@ import styled from "styled-components";
 // * Profile Section
 
 export const ProfileContent = styled.div`
-  margin: 0 auto 1.2rem auto;
   display: block;
   color: white;
   text-align: center;
