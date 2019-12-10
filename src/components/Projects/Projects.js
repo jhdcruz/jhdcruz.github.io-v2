@@ -1,7 +1,7 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
 
-import projects from "./data";
+import projectList from "./projects.data";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import {
@@ -23,7 +23,7 @@ export default function Projects() {
       <Title>Projects</Title>
       <hr />
       <ProjectsList className="columns">
-        {projects.map(project => (
+        {projectList.projects.map(project => (
           <Card className="card column" key={project.id}>
             <CardContent className="card-content">
               <CardHeading className="media">
