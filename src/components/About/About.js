@@ -4,15 +4,9 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Bio, Name, PersonalTitle, Profile, ProfileContent, Skillset, Social } from "./About.styled";
 
 import ProfileImg from "images/icon.png";
-import Skills from "./about.data";
+import aboutData from "./about.data";
 
 function SkillSets() {
-  // Skills Data
-  const frontEnd = Skills.FrontEnd;
-  const design = Skills.Design;
-  const services = Skills.Services;
-  const others = Skills.Others;
-
   return <>
     <Skillset className="columns is-gapless">
 
@@ -20,7 +14,7 @@ function SkillSets() {
       <div className="column is-one-quarter">
         <h5><i className="fas fa-bookmark"/> Front-end</h5>
         <ul>
-          {frontEnd.map(fe => (
+          {aboutData.Skills.FrontEnd.map(fe => (
             <li><i className="fas fa-angle-right"/> {fe}</li>
           ))}
         </ul>
@@ -30,7 +24,7 @@ function SkillSets() {
       <div className="column is-one-quarter">
         <h5><i className="fas fa-bookmark"/> Design</h5>
         <ul>
-          {design.map(des => (
+          {aboutData.Skills.Design.map(des => (
             <li><i className="fas fa-angle-right"/> {des}</li>
           ))}
         </ul>
@@ -40,7 +34,7 @@ function SkillSets() {
       <div className="column is-one-quarter">
         <h5><i className="fas fa-bookmark"/> Services / DevOps</h5>
         <ul>
-          {services.map(svc => (
+          {aboutData.Skills.Services.map(svc => (
             <li><i className="fas fa-angle-right"/> {svc}</li>
           ))}
         </ul>
@@ -50,7 +44,7 @@ function SkillSets() {
       <div className="column is-one-quarter">
         <h5><i className="fas fa-bookmark"/> Others</h5>
         <ul>
-          {others.map(oth => (
+          {aboutData.Skills.Others.map(oth => (
             <li><i className="fas fa-angle-right"/> {oth}</li>
           ))}
         </ul>
@@ -63,18 +57,11 @@ function SkillSets() {
 function SocialContacts() {
   return <>
     <Social>
-      <a href="https://m.me/jhdcruz">
-        <i className="fab fa-facebook-messenger"/>
-      </a>
-      <a href="https://github.com/jhdcruz">
-        <i className="fab fa-github"/>
-      </a>
-      <a href="https://stackoverflow.com/users/7976244/aegir-aideron?tab=profile">
-        <i className="fab fa-stack-overflow"/>
-      </a>
-      <a href="https://keybase.io/jhdcruz">
-        <i className="fab fa-keybase"/>
-      </a>
+      {aboutData.SocialContact.map(contact => (
+        <a href={contact.link} key={contact.id}>
+          <i className={contact.icon} />
+        </a>
+      ))}
     </Social>
   </>;
 }
