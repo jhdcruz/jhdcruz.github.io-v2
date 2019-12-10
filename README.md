@@ -20,6 +20,7 @@ Featuring new UI/UX Design; lessened distracting objects.
 - [ ] Mobile Layout
 - [ ] Beyond `1336x768` screen resolution support
 - [ ] Code Documentation/Comments
+- [ ] Performance Improvement *(Fine-tuning)*
 
 **Optional:**
 
