@@ -2,7 +2,15 @@ import React from "react";
 import "dependency/bulma/css/bulma.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import {Button, ContactForm, Form, GlobalStyle, Label, Notice, Title} from "./Contact.styled";
+import {
+  Button,
+  ContactForm,
+  Form,
+  GlobalStyle,
+  Label,
+  Notice,
+  Title
+} from "./Contact.styled";
 
 export default function Contact() {
   return (

@@ -6,7 +6,12 @@ import Projects from "components/Projects/Projects";
 import Contact from "components/Contact/Contact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import { ContentWrapper, Profession, Subtitle, Welcome } from "./Introduction.styled";
+import {
+  ContentWrapper,
+  Profession,
+  Subtitle,
+  Welcome
+} from "./Introduction.styled";
 
 export default function Introduction() {
   return (

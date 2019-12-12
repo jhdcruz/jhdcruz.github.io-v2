@@ -1,6 +1,6 @@
 import React from "react";
-import {HashRouter, NavLink, Route} from "react-router-dom";
-import {AnimatedSwitch, spring} from "react-router-transition";
+import { HashRouter, NavLink, Route } from "react-router-dom";
+import { AnimatedSwitch, spring } from "react-router-transition";
 import "dependency/bulma/css/bulma.min.css";
 // * Components Import
 // noinspection NpmUsedModulesInstalled
@@ -15,7 +15,14 @@ import Contact from "components/Contact/Contact";
 // noinspection NpmUsedModulesInstalled
 import brand from "images/HERO.svg";
 
-import {NavBar, NavLeft, NavRight, NavStyles, RouterWrapper, WebBrand} from "./Wrapper.styled";
+import {
+  NavBar,
+  NavLeft,
+  NavRight,
+  NavStyles,
+  RouterWrapper,
+  WebBrand
+} from "./Wrapper.styled";
 
 // ? Hamburger Menu toggler
 function navActive() {

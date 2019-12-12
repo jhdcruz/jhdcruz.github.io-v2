@@ -67,5 +67,4 @@ export const Skillset = styled.div`
   margin: 8px auto;
   padding: 0 5rem;
   text-align: justify;
-
 `;

@@ -8,7 +8,7 @@ import Wrapper from "components/Wrapper";
 import BgParticles from "components/BgParticles/BgParticles";
 import Footer from "components/Footer/Footer";
 // * Assets Import
-import styled, {createGlobalStyle} from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   body,
