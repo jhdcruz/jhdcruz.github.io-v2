@@ -4,13 +4,16 @@ import Projects from "components/Projects/Projects";
 import Contact from "components/Contact/Contact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import { ContentWrapper, Subtitle, Title, Welcome } from "./Introduction.styled";
+import {
+  ContentWrapper,
+  Subtitle,
+  Title,
+  Welcome
+} from "./Introduction.styled";
 
 function Profession() {
   return (
-    <Title className="header">
-      A Front-End Web Developer & Designer.
-    </Title>
+    <Title className="header">A Front-End Web Developer & Designer.</Title>
   );
 }
 

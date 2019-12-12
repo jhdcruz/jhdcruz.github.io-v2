@@ -10,7 +10,14 @@ import Contact from "components/Contact/Contact";
 // * Assets Imports
 import brand from "images/HERO.svg";
 
-import { NavBar, NavLeft, NavRight, NavStyles, RouterWrapper, WebBrand } from "./Wrapper.styled";
+import {
+  NavBar,
+  NavLeft,
+  NavRight,
+  NavStyles,
+  RouterWrapper,
+  WebBrand
+} from "./Wrapper.styled";
 
 // ? Hamburger Menu toggler
 function navActive() {
