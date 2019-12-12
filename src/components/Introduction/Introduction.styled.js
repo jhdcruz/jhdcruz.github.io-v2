@@ -14,7 +14,7 @@ export const Welcome = styled.h5`
 `;
 
 // noinspection JSUnresolvedFunction
-export const Profession = styled.h4`
+export const Title = styled.h4`
   font-weight: 600;
   color: whitesmoke;
   text-transform: uppercase;

@@ -6,13 +6,13 @@ import Projects from "components/Projects/Projects";
 import Contact from "components/Contact/Contact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import { ContentWrapper, Profession, Subtitle, Welcome } from "./Introduction.styled";
+import { ContentWrapper, Subtitle, Title, Welcome } from "./Introduction.styled";
 
-function JobTitle() {
+function Profession() {
   return (
-    <Profession className="header">
+    <Title className="header">
       A Front-End Web Developer & Designer.
-    </Profession>
+    </Title>
   );
 }
 
@@ -51,7 +51,7 @@ export default function Introduction() {
     <ContentWrapper className="hero-body">
       <div className="container">
         <Hello />
-        <JobTitle />
+        <Profession />
         <SubTitle />
         <div className="field is-grouped">
           <ProjectButton />
