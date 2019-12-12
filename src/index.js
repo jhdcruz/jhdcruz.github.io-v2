@@ -1,7 +1,6 @@
 // ! High Level imports
 // noinspection NpmUsedModulesInstalled
 import React from "dependency/react";
-// noinspection NpmUsedModulesInstalled
 import ReactDOM from "dependency/react-dom";
 // * Components Import
 import Wrapper from "components/Wrapper";

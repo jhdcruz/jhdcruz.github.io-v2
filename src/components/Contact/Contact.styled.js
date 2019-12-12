@@ -45,7 +45,6 @@ export const Form = styled.form`
   padding: 1rem 8rem 0 0;
 `;
 
-// noinspection JSUnresolvedFunction
 export const Title = styled.h2`
   color: white;
   font-size: 22px;
@@ -60,7 +59,6 @@ export const Label = styled.div`
   font-weight: 500;
 `;
 
-// noinspection JSUnresolvedFunction
 export const Notice = styled.h6`
   color: #adadad;
   font-size: 12px;

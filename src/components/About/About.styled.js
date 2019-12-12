@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 // * Profile Section
-
 export const ProfileContent = styled.div`
   display: block;
   color: white;
@@ -16,14 +15,12 @@ export const Profile = styled.img`
   display: block;
 `;
 
-// noinspection JSUnresolvedFunction
 export const Name = styled.h1`
   font-size: 1.8rem;
   line-height: 1;
   display: block;
 `;
 
-// noinspection JSUnresolvedFunction
 export const PersonalTitle = styled.h1`
   font-size: 1.1rem;
   margin: 2px;
@@ -52,7 +49,6 @@ export const Social = styled.div`
 `;
 
 // * Bio Section
-
 export const Bio = styled.div`
   margin: 0.5em auto;
   padding: 0.8em 3em;
@@ -61,7 +57,6 @@ export const Bio = styled.div`
 `;
 
 // * Skill Section
-
 export const Skillset = styled.div`
   color: white;
   margin: 8px auto;

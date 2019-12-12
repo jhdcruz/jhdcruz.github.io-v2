@@ -1,15 +1,7 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-// noinspection NpmUsedModulesInstalled
-import {
-  Bio,
-  Name,
-  PersonalTitle,
-  Profile,
-  ProfileContent,
-  Skillset,
-  Social
-} from "./About.styled";
+
+import { Bio, Name, PersonalTitle, Profile, ProfileContent, Skillset, Social } from "./About.styled";
 
 import ProfileImg from "images/icon.png";
 import aboutData from "./about.data";
@@ -46,7 +38,7 @@ function SkillSets() {
           </ul>
         </div>
 
-        {/* Services / DevOps */}
+        {/* Services */}
         <div className="column is-one-quarter">
           <h5>
             <i className="fas fa-bookmark" /> Services

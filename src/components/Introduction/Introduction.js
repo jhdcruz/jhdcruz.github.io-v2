@@ -1,8 +1,6 @@
 import React from "react";
 import { NavLink, Route } from "react-router-dom";
-// noinspection NpmUsedModulesInstalled
 import Projects from "components/Projects/Projects";
-// noinspection NpmUsedModulesInstalled
 import Contact from "components/Contact/Contact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
