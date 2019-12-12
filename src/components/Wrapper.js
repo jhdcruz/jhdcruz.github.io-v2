@@ -15,14 +15,7 @@ import Contact from "components/Contact/Contact";
 // noinspection NpmUsedModulesInstalled
 import brand from "images/HERO.svg";
 
-import {
-  NavBar,
-  NavLeft,
-  NavRight,
-  NavStyles,
-  RouterWrapper,
-  WebBrand
-} from "./Wrapper.styled";
+import { NavBar, NavLeft, NavRight, NavStyles, RouterWrapper, WebBrand } from "./Wrapper.styled";
 
 // ? Hamburger Menu toggler
 function navActive() {
@@ -67,72 +60,83 @@ const bounceTransition = {
   }
 };
 
+function Nav() {
+  return (
+    <NavBar
+      className="navbar is-transparent"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <NavStyles />
+      {/* Website Brand | Home */}
+      <NavLeft className="navbar-brand">
+        <WebBrand className="navbar-item branding">
+          <NavLink to="/">
+            <img src={brand} alt="H E R O" width="85" height="auto" />
+          </NavLink>
+        </WebBrand>
+
+        {/* Hamburger Menu */}
+        <a
+          role="button"
+          className="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          onClick={navActive}
+        >
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+        </a>
+      </NavLeft>
+
+      {/* Router Links */}
+      <div className="navbar-menu">
+        <NavRight className="navbar-end">
+          <NavLink to="/about" className="navbar-item">
+            About
+          </NavLink>
+          <NavLink to="/projects" className="navbar-item">
+            Projects
+          </NavLink>
+          <NavLink to="/contact" className="navbar-item">
+            Contact
+          </NavLink>
+        </NavRight>
+      </div>
+    </NavBar>
+  );
+}
+
+function Router() {
+  return (
+    // Router Container
+    <div className="routerContainer">
+      {/* Router Transition */}
+      <AnimatedSwitch
+        atEnter={bounceTransition.atEnter}
+        atLeave={bounceTransition.atLeave}
+        atActive={bounceTransition.atActive}
+        mapStyles={mapStyles}
+        className="routerContent"
+      >
+        {/* Router Contents */}
+        <Route exact path="/" component={Intro} />
+        <Route path="/about" component={About} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
+      </AnimatedSwitch>
+    </div>
+  );
+}
+
 export default function Wrapper() {
   return (
     <div className="hero-head">
       <HashRouter>
-        <NavBar
-          className="navbar is-transparent"
-          role="navigation"
-          aria-label="main navigation"
-        >
-          <NavStyles />
-          {/* Website Brand | Home */}
-          <NavLeft className="navbar-brand">
-            <WebBrand className="navbar-item branding">
-              <NavLink to="/">
-                <img src={brand} alt="H E R O" width="85" height="auto" />
-              </NavLink>
-            </WebBrand>
-
-            {/* Hamburger Menu */}
-            <a
-              role="button"
-              className="navbar-burger"
-              aria-label="menu"
-              aria-expanded="false"
-              onClick={navActive}
-            >
-              <span aria-hidden="true" />
-              <span aria-hidden="true" />
-              <span aria-hidden="true" />
-            </a>
-          </NavLeft>
-
-          {/* Router Links */}
-          <div className="navbar-menu">
-            <NavRight className="navbar-end">
-              <NavLink to="/about" className="navbar-item">
-                About
-              </NavLink>
-              <NavLink to="/projects" className="navbar-item">
-                Projects
-              </NavLink>
-              <NavLink to="/contact" className="navbar-item">
-                Contact
-              </NavLink>
-            </NavRight>
-          </div>
-        </NavBar>
-
-        {/* Router Container */}
-        <RouterWrapper />
-        <div className="routerContainer">
-          {/* Router Transition */}
-          <AnimatedSwitch
-            atEnter={bounceTransition.atEnter}
-            atLeave={bounceTransition.atLeave}
-            atActive={bounceTransition.atActive}
-            mapStyles={mapStyles}
-            className="routerContent"
-          >
-            {/* Router Contents */}
-            <Route exact path="/" component={Intro} />
-            <Route path="/about" component={About} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/contact" component={Contact} />
-          </AnimatedSwitch>
-        </div>
+        <Nav />
+        <RouterWrapper /> {/* <-- Global style for router/routing */}
+        <Router />
       </HashRouter>
     </div>
   );

@@ -66,7 +66,6 @@ export const GlobalStyle = createGlobalStyle`
       to(rgba(104, 104, 104, 0.3))
     );
   }
-
 `;
 
 const MainContent = styled.div`
