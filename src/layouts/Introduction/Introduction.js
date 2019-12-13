@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, Route } from "react-router-dom";
-import Projects from "components/Projects/Projects";
+import Projects from "layouts/Projects/Projects";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import { ContentWrapper, Subtitle, Title, Welcome } from "./Introduction.styled";

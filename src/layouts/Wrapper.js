@@ -3,9 +3,9 @@ import { HashRouter, NavLink, Route } from "react-router-dom";
 import { AnimatedSwitch, spring } from "react-router-transition";
 import "dependency/bulma/css/bulma.min.css";
 // * Components Import
-import Intro from "components/Introduction/Introduction";
-import Projects from "components/Projects/Projects";
-import About from "components/About/About";
+import Intro from "layouts/Introduction/Introduction";
+import Projects from "layouts/Projects/Projects";
+import About from "layouts/About/About";
 // * Assets Imports
 import brand from "images/HERO.svg";
 
