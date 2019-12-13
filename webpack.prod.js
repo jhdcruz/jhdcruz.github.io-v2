@@ -44,5 +44,10 @@ module.exports = merge(common, {
       inlineManifestWebpackName: "webpackManifest"
     }),
     new InlineManifestWebpackPlugin()
-  ]
+  ],
+  optimization: {
+    splitChunks: {
+      chunks: "all"
+    }
+  }
 });
