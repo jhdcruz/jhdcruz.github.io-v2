@@ -32,7 +32,11 @@ module.exports = merge(common, {
         {
           rel: "preload",
           href: "https://fonts.googleapis.com/css?family=Kanit&display=swap",
-          as: "font"
+          as: "style"
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css?family=Kanit&display=swap"
         },
         {
           rel: "stylesheet",
