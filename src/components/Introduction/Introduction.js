@@ -34,10 +34,9 @@ function ProjectButton() {
 
 function ContactButton() {
   return (
-    <NavLink to="/contact" className="button is-outlined">
-      <i className="fas fa-envelope" />
-      <a href="mailto:jhdcruz@vivaldi.net">Contact me</a>
-    </NavLink>
+    <a href="mailto:jhdcruz@vivaldi.net" className="button is-outlined">
+      <i className="fas fa-envelope" /> Contact me
+    </a>
   );
 }
 
@@ -57,7 +56,6 @@ export default function Introduction() {
       {/* Button Redirects/Routes */}
       <div className="mainContent">
         <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
       </div>
     </ContentWrapper>
   );
