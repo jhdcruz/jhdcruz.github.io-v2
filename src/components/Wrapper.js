@@ -6,18 +6,10 @@ import "dependency/bulma/css/bulma.min.css";
 import Intro from "components/Introduction/Introduction";
 import Projects from "components/Projects/Projects";
 import About from "components/About/About";
-import Contact from "components/Contact/Contact";
 // * Assets Imports
 import brand from "images/HERO.svg";
 
-import {
-  NavBar,
-  NavLeft,
-  NavRight,
-  NavStyles,
-  RouterWrapper,
-  WebBrand
-} from "./Wrapper.styled";
+import { NavBar, NavLeft, NavRight, NavStyles, RouterWrapper, WebBrand } from "./Wrapper.styled";
 
 // ? Hamburger Menu toggler
 function navActive() {
@@ -95,14 +87,11 @@ function Nav() {
       {/* Router Links */}
       <div className="navbar-menu">
         <NavRight className="navbar-end">
-          <NavLink to="/about" className="navbar-item">
-            About
-          </NavLink>
           <NavLink to="/projects" className="navbar-item">
             Projects
           </NavLink>
-          <NavLink to="/contact" className="navbar-item">
-            Contact
+          <NavLink to="/about" className="navbar-item">
+            About
           </NavLink>
         </NavRight>
       </div>
@@ -124,9 +113,8 @@ function Router() {
       >
         {/* Router Contents */}
         <Route exact path="/" component={Intro} />
-        <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/about" component={About} />
       </AnimatedSwitch>
     </div>
   );

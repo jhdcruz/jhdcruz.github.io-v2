@@ -1,15 +1,9 @@
 import React from "react";
 import { NavLink, Route } from "react-router-dom";
 import Projects from "components/Projects/Projects";
-import Contact from "components/Contact/Contact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import {
-  ContentWrapper,
-  Subtitle,
-  Title,
-  Welcome
-} from "./Introduction.styled";
+import { ContentWrapper, Subtitle, Title, Welcome } from "./Introduction.styled";
 
 function Profession() {
   return (
@@ -42,7 +36,7 @@ function ContactButton() {
   return (
     <NavLink to="/contact" className="button is-outlined">
       <i className="fas fa-envelope" />
-      Contact me
+      <a href="mailto:jhdcruz@vivaldi.net">Contact me</a>
     </NavLink>
   );
 }
