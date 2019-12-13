@@ -37,17 +37,6 @@ module.exports = merge(common, {
         {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css?family=Kanit&display=swap"
-        },
-        {
-          rel: "stylesheet",
-          href: "https://s.pageclip.co/v1/pageclip.css",
-          media: "screen"
-        }
-      ],
-      scripts: [
-        {
-          src: "https://s.pageclip.co/v1/pageclip.js",
-          charset: "utf-8"
         }
       ],
       googleAnalytics: {
