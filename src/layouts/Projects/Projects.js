@@ -1,6 +1,6 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 
 import {
   Card,

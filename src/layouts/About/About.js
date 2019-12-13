@@ -1,5 +1,5 @@
 import React from "react";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 
 import { Bio, Name, PersonalTitle, Profile, ProfileContent, Skillset, Social } from "./About.styled";
 
