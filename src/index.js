@@ -9,7 +9,7 @@ import Footer from "components/Footer/Footer";
 // * Assets Import
 import styled, { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   body,
   html {
     height: 100%;

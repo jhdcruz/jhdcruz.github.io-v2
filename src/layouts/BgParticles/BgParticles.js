@@ -5,7 +5,7 @@ import particlesConfig from "./particlesjs-config.json";
 
 import { createGlobalStyle } from "styled-components";
 
-export const ParticlesBg = createGlobalStyle`
+const ParticlesBg = createGlobalStyle`
   canvas,
   .particle-bg {
     position: absolute;
