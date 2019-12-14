@@ -31,12 +31,12 @@ module.exports = merge(common, {
       links: [
         {
           rel: "preload",
-          href: "https://fonts.googleapis.com/css?family=Kanit&display=swap",
+          href: "https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap",
           as: "style"
         },
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css?family=Kanit&display=swap"
+          href: "https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap"
         }
       ],
       googleAnalytics: {
