@@ -13,8 +13,7 @@ Featuring new UI/UX Design; lessened distracting objects.
 
 ## Roadmap
 
-- [x] Recent Contribution component
-- [x] Contact submission container
+- [x] Recent Contribution component *(Temp. removed)*
 - [x] React-router-dom integration (SPA)
 - [ ] SVG Branding rework
 - [ ] Mobile Layout
