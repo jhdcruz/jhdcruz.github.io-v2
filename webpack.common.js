@@ -1,10 +1,11 @@
 const path = require("path");
 
 module.exports = {
-  entry: ["./src/index.js"],
+  entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "public"),
-    filename: "[name].js"
+    filename: "[name].js",
+    chunkFilename: "[name].[id].chunk.js"
   },
   resolve: {
     modules: ["node_modules"],
@@ -19,12 +20,10 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: "babel-loader"
-      },
-      {
-        test: /\.(js|jsx)$/,
-        loader: "stylelint-custom-processor-loader",
-        exclude: /node_modules/
+        use: [
+          "stylelint-custom-processor-loader",
+          "babel-loader"
+        ]
       },
       {
         test: /\.(css|scss)$/,
@@ -51,5 +50,10 @@ module.exports = {
         use: "file-loader"
       }
     ]
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "all"
+    }
   }
 };
