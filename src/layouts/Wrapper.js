@@ -1,107 +1,64 @@
 import React from "react";
-import { HashRouter, NavLink, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import { AnimatedSwitch, spring } from "react-router-transition";
 import "dependency/bulma/css/bulma.min.css";
+
 // * Components Import
-import Intro from "components/Introduction/Introduction";
-import Projects from "components/Projects/Projects";
-import About from "components/About/About";
-// * Assets Imports
-import brand from "images/HERO.svg";
+import Nav from "components/nav";
+import Intro from "layouts/Introduction/Introduction";
+import Projects from "layouts/Projects/Projects";
+import About from "layouts/About/About";
 
-import { NavBar, NavLeft, NavRight, NavStyles, RouterWrapper, WebBrand } from "./Wrapper.styled";
+import { createGlobalStyle } from "styled-components";
 
-// ? Hamburger Menu toggler
-function navActive() {
-  const navBurger = document.querySelector(".navbar-burger");
-  const navMenu = document.querySelector(".navbar-menu");
-
-  navBurger.classList.toggle("is-active");
-  navMenu.classList.toggle("is-active");
-}
-
-// ? Map the props
-function mapStyles(styles) {
-  return {
-    opacity: styles.opacity,
-    transform: `scale(${styles.scale})`
-  };
-}
-
-// ? wrap the `spring` helper to use a bouncy config
-function bounce(val) {
-  return spring(val, {
-    stiffness: 360,
-    damping: 65
-  });
-}
-
-const bounceTransition = {
-  // ? tart in a transparent, upscaled state
-  atEnter: {
-    opacity: 0,
-    scale: 1.2
-  },
-  // ? leave in a transparent, downscaled state
-  atLeave: {
-    opacity: bounce(0),
-    scale: bounce(0.8)
-  },
-  // ? and rest at an opaque, normally-scaled state
-  atActive: {
-    opacity: bounce(1),
-    scale: bounce(1)
+const RouterWrapper = createGlobalStyle`
+  .routerContent {
+    position: relative;
   }
-};
 
-function Nav() {
-  return (
-    <NavBar
-      className="navbar is-transparent"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <NavStyles />
-      {/* Website Brand | Home */}
-      <NavLeft className="navbar-brand">
-        <WebBrand className="navbar-item branding">
-          <NavLink to="/">
-            <img src={brand} alt="H E R O" width="85" height="auto" />
-          </NavLink>
-        </WebBrand>
-
-        {/* Hamburger Menu */}
-        <a
-          role="button"
-          className="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          onClick={navActive}
-        >
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
-        </a>
-      </NavLeft>
-
-      {/* Router Links */}
-      <div className="navbar-menu">
-        <NavRight className="navbar-end">
-          <NavLink to="/projects" className="navbar-item">
-            Projects
-          </NavLink>
-          <NavLink to="/about" className="navbar-item">
-            About
-          </NavLink>
-        </NavRight>
-      </div>
-    </NavBar>
-  );
-}
+  .routerContent > div {
+    position: absolute;
+    width: 100%;
+  }
+`;
 
 function Router() {
+  // ? Map the props
+  function mapStyles(styles) {
+    return {
+      opacity: styles.opacity,
+      transform: `scale(${styles.scale})`
+    };
+  }
+
+  // ? wrap the `spring` helper to use a bouncy config
+  function bounce(val) {
+    return spring(val, {
+      stiffness: 360,
+      damping: 65
+    });
+  }
+
+  const bounceTransition = {
+    // ? tart in a transparent, upscaled state
+    atEnter: {
+      opacity: 0,
+      scale: 1.2
+    },
+    // ? leave in a transparent, downscaled state
+    atLeave: {
+      opacity: bounce(0),
+      scale: bounce(0.8)
+    },
+    // ? and rest at an opaque, normally-scaled state
+    atActive: {
+      opacity: bounce(1),
+      scale: bounce(1)
+    }
+  };
+
   return (
-    // Router Container
+    // * Router Container
     <div className="routerContainer">
       {/* Router Transition */}
       <AnimatedSwitch
