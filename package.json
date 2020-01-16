@@ -46,7 +46,7 @@
     "html-webpack-template": "6.2.0",
     "inline-manifest-webpack-plugin": "4.0.2",
     "jest": "24.9.0",
-    "node-sass": "4.13.0",
+    "node-sass": "4.13.1",
     "prettier": "1.19.1",
     "react-hot-loader": "4.12.18",
     "sass-loader": "8.0.1",
