@@ -1,16 +1,17 @@
 const path = require("path");
 
 module.exports = {
-  entry: ["./src/index.js"],
+  entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "public"),
-    filename: "bundle.js"
+    filename: "[name].js",
+    chunkFilename: "[name].[id].chunk.js"
   },
   resolve: {
     modules: ["node_modules"],
     alias: {
       images: path.join(__dirname, "./src/shared/img"),
-      components: path.join(__dirname, "./src/components"),
+      components: path.join(__dirname, "./src/layouts"),
       dependency: path.join(__dirname, "node_modules")
     }
   },
@@ -19,12 +20,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: "babel-loader"
-      },
-      {
-        test: /\.(js|jsx)$/,
-        loader: "stylelint-custom-processor-loader",
-        exclude: /node_modules/
+        use: ["stylelint-custom-processor-loader", "babel-loader"]
       },
       {
         test: /\.(css|scss)$/,
@@ -51,5 +47,10 @@ module.exports = {
         use: "file-loader"
       }
     ]
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "all"
+    }
   }
 };

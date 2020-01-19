@@ -1,0 +1,46 @@
+{
+  "Skills": {
+    "FrontEnd": [
+      "JavaScript (ES5+)",
+      "ReactJS 16+",
+      "Electron Framework 5+"
+    ],
+    "Design": [
+      "Flat & Material UI",
+      "Adobe XD",
+      "Figma",
+      "Photoshop CS6/CC"
+    ],
+    "Services": [
+      "TravisCI",
+      "CircleCI",
+      "Sentry"
+    ],
+    "Others": [
+      "Git VCS",
+      "Linux OS"
+    ]
+  },
+  "SocialContact": [
+    {
+      "id": "1",
+      "icon": "fab fa-facebook-messenger",
+      "link": "https://m.me/jhdcruz"
+    },
+    {
+      "id": "2",
+      "icon": "fab fa-github",
+      "link": "https://github.com/jhdcruz"
+    },
+    {
+      "id": "3",
+      "icon": "fab fa-stack-overflow",
+      "link": "https://stackoverflow.com/users/7976244/aegir-aideron?tab=profile"
+    },
+    {
+      "id": "4",
+      "icon": "fab fa-keybase",
+      "link": "https://keybase.io/jhdcruz"
+    }
+  ]
+}

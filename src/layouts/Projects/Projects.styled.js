@@ -13,8 +13,8 @@ export const Title = styled.h2`
   letter-spacing: 1.8px;
 `;
 
-export const ProjectsList = styled.div`
-  margin: 8 auto;
+export const ProjectContainer = styled.div`
+  margin: 8px auto;
   padding: 0.9rem auto !important;
 `;
 

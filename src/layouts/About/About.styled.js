@@ -1,43 +1,67 @@
 import styled from "styled-components";
 
 // * Profile Section
-
 export const ProfileContent = styled.div`
-  margin: 1.6rem 0;
   display: block;
   color: white;
+  text-align: center;
 `;
 
 export const Profile = styled.img`
   border-radius: 100%;
   width: 16em;
   height: auto;
-  display: inline-block;
-  vertical-align: middle;
+  margin: 0 auto;
+  display: block;
 `;
 
 export const Name = styled.h1`
-  font-size: 1.7rem;
-  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 1;
+  display: block;
 `;
 
 export const PersonalTitle = styled.h1`
   font-size: 1.1rem;
+  margin: 2px;
   color: #dbdbdb;
   display: block;
 `;
 
 // * Social
 export const Social = styled.div`
-  margin: 5px;
+  margin: 7px 0;
+
+  a {
+    font-size: 25px;
+    color: #e7e7e7;
+
+    :hover {
+      color: #3273dc;
+    }
+  }
+
+  i {
+    margin: 0 10px 0 0;
+    padding: 3px;
+    height: auto;
+  }
 `;
 
 // * Bio Section
-
 export const Bio = styled.div`
-  margin: 0.5em 6em;
+  margin: 0.5em auto;
   padding: 0.8em 3em;
   color: white;
+  text-align: justify;
+`;
+
+// * Skill Section
+export const Skillset = styled.div`
+  color: white;
+  margin: 8px auto;
+  padding: 0 5rem;
+  text-align: justify;
 `;
 
 // Maintenance

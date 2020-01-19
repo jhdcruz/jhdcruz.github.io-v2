@@ -31,19 +31,12 @@ module.exports = merge(common, {
       links: [
         {
           rel: "preload",
-          href: "https://fonts.googleapis.com/css?family=Kanit&display=swap",
-          as: "font"
+          href: "https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap",
+          as: "style"
         },
         {
           rel: "stylesheet",
-          href: "https://s.pageclip.co/v1/pageclip.css",
-          media: "screen"
-        }
-      ],
-      scripts: [
-        {
-          src: "https://s.pageclip.co/v1/pageclip.js",
-          charset: "utf-8"
+          href: "https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap"
         }
       ],
       googleAnalytics: {

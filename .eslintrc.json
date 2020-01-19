@@ -16,6 +16,9 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
+  "settings": {
+    "react": "detect"
+  },
   "rules": {
     "no-undef": "off",
     "no-unused-vars": "off",
