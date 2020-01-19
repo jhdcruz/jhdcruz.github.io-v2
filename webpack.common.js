@@ -20,10 +20,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: [
-          "stylelint-custom-processor-loader",
-          "babel-loader"
-        ]
+        use: ["stylelint-custom-processor-loader", "babel-loader"]
       },
       {
         test: /\.(css|scss)$/,
