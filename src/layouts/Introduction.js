@@ -5,7 +5,7 @@ import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 import styled from "styled-components";
 
 // * Component Imports
-import Button from "components/button";
+import PageLink from "components/pageLink";
 
 // * Component Style
 const ContentWrapper = styled.div`
@@ -53,16 +53,21 @@ function Hello() {
 }
 
 function ProjectButton() {
-  return <Button link="/projects" icon="fab fa-git-alt" name="My Projects" />;
+  return (
+    <PageLink
+      page="/projects"
+      style="button is-outlined"
+      icon="fab fa-git-alt"
+      name="My Projects"
+    />
+  );
 }
 
 function ContactButton() {
   return (
-    <Button
-      link="mailto:jhdcruz@vivaldi.net"
-      icon="fas fa-envelope"
-      name="Contact me"
-    />
+    <a href="mailto:jhdcruz@vivaldi.net">
+      <i className="fas fa-envelope" /> Contact me
+    </a>
   );
 }
 
