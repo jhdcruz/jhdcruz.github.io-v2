@@ -3,7 +3,8 @@ import styled, { createGlobalStyle } from "styled-components";
 import { NavLink } from "react-router-dom";
 
 // * Components Import
-import pageLink from "./pageLink";
+import PageLink from "./pageLink";
+import brand from "images/HERO.svg";
 
 export const NavStyles = createGlobalStyle`
   .navbar-end {
@@ -92,8 +93,8 @@ export default function Nav() {
       {/* Router Links */}
       <div className="navbar-menu">
         <NavRight className="navbar-end">
-          <pageLink page="/projects" style="navbar-item" name="Projects" />
-          <pageLink page="/about" style="navbar-item" name="About" />
+          <PageLink page="/projects" style="navbar-item" name="Projects" />
+          <PageLink page="/about" style="navbar-item" name="About" />
         </NavRight>
       </div>
     </NavBar>
