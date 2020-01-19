@@ -65,7 +65,7 @@ function ProjectButton() {
 
 function ContactButton() {
   return (
-    <a href="mailto:jhdcruz@vivaldi.net">
+    <a href="mailto:jhdcruz@vivaldi.net" className="button is-outlined">
       <i className="fas fa-envelope" /> Contact me
     </a>
   );
