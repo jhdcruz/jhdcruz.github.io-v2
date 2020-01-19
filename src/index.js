@@ -1,11 +1,12 @@
 // ! High Level imports
-// noinspection NpmUsedModulesInstalled
 import React from "dependency/react";
 import ReactDOM from "dependency/react-dom";
+
 // * Components Import
-import Wrapper from "components/Wrapper";
-import BgParticles from "components/BgParticles/BgParticles";
-import Footer from "components/Footer/Footer";
+import Wrapper from "layouts/Wrapper";
+import BgParticles from "layouts/BgParticles/BgParticles";
+import Footer from "layouts/Footer";
+
 // * Assets Import
 import styled, { createGlobalStyle } from "styled-components";
 

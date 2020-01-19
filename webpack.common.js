@@ -11,7 +11,8 @@ module.exports = {
     modules: ["node_modules"],
     alias: {
       images: path.join(__dirname, "./src/shared/img"),
-      components: path.join(__dirname, "./src/layouts"),
+      components: path.join(__dirname, "./src/components"),
+      layouts: path.join(__dirname, "./src/layouts"),
       dependency: path.join(__dirname, "node_modules")
     }
   },

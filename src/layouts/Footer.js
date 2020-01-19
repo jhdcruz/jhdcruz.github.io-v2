@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <footer className="hero-footer">
       <GitHub
-        href="https://github.com/jhdcruz/jhdcruz.github.io"
+        href="https://github.com/jhdcruz/jhdcruz.github.io-v2"
         className="gh-redirect"
       >
         Copyright &copy; 2019 | Joshua Hero Dela Cruz
