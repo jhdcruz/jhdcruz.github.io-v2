@@ -53,7 +53,7 @@ function Hello() {
 }
 
 function ProjectButton() {
-  return <Button link="/projects" icon="fas fa-git-alt" name="My Projects" />;
+  return <Button link="/projects" icon="fab fa-git-alt" name="My Projects" />;
 }
 
 function ContactButton() {
