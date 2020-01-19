@@ -34,7 +34,6 @@ const Subtitle = styled.h6`
   margin: 4.5px 0 16px 0;
 `;
 
-
 function Profession() {
   return (
     <Title className="header">A Front-End Web Developer & Designer.</Title>
@@ -54,13 +53,7 @@ function Hello() {
 }
 
 function ProjectButton() {
-  return (
-    <Button
-      link="/projects"
-      icon="fas fa-git-alt"
-      name="My Projects"
-      />
-  )
+  return <Button link="/projects" icon="fas fa-git-alt" name="My Projects" />;
 }
 
 function ContactButton() {
@@ -68,7 +61,7 @@ function ContactButton() {
     <Button
       link="mailto:jhdcruz@vivaldi.net"
       icon="fas fa-envelope"
-      name=="Contact me"
+      name="Contact me"
     />
   );
 }

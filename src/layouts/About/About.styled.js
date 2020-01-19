@@ -63,3 +63,13 @@ export const Skillset = styled.div`
   padding: 0 5rem;
   text-align: justify;
 `;
+
+// Maintenance
+
+export const Maintenance = styled.h1`
+  text-align: center;
+  font-size: 2.8rem;
+  color: whitesmoke;
+  margin: 18vh 0;
+  padding: 1.2rem;
+`;
