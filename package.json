@@ -46,7 +46,7 @@
     "inline-manifest-webpack-plugin": "4.0.2",
     "jest": "25.1.0",
     "node-sass": "4.13.1",
-    "prettier": "1.19.1",
+    "prettier": "2.0.1",
     "react-hot-loader": "4.12.19",
     "sass-loader": "8.0.2",
     "source-map-loader": "0.2.4",
