@@ -1,7 +1,6 @@
 const merge = require("webpack-merge");
 const common = require("./webpack.common");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const InlineManifestWebpackPlugin = require("inline-manifest-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "production",
@@ -40,9 +39,7 @@ module.exports = merge(common, {
       googleAnalytics: {
         trackingId: "UA-131928651-1",
         pageViewOnLoad: true
-      },
-      inlineManifestWebpackName: "webpackManifest"
-    }),
-    new InlineManifestWebpackPlugin()
+      }
+    })
   ]
 });
