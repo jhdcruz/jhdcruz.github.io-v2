@@ -5,7 +5,7 @@ import ReactDOM from "dependency/react-dom";
 // * Components Import
 import Wrapper from "layouts/Wrapper";
 import BgParticles from "layouts/BgParticles/BgParticles";
-import Footer from "layouts/Footer";
+import Footer from "components/footer";
 
 // * Assets Import
 import styled, { createGlobalStyle } from "styled-components";
