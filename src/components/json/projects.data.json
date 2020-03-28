@@ -21,7 +21,7 @@
       "key": "3",
       "icon": "https://i.imgur.com/FLBWrqg.png",
       "title": "Desktop Messages",
-      "description": "Google's Androkey Messages for Desktop w/ Frameless Window",
+      "description": "Google's Android Messages for Desktop w/ Frameless Window",
       "link": "https://github.com/jhdcruz/Desktop-Messages",
       "category": "Electron, NSIS"
     }
