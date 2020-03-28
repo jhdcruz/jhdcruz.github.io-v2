@@ -1,6 +1,7 @@
 const merge = require("webpack-merge");
 const common = require("./webpack.common");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const InlineManifestWebpackPlugin = require("inline-manifest-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "development",
@@ -30,18 +31,21 @@ module.exports = merge(common, {
       links: [
         {
           rel: "preload",
-          href: "https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap",
+          href:
+            "https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap",
           as: "style"
         },
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap"
+          href:
+            "https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap"
         }
       ],
       googleAnalytics: {
         trackingId: "UA-XXXXXXXXX-X",
         pageViewOnLoad: true
       }
-    })
+    }),
+    new InlineManifestWebpackPlugin()
   ]
 });
