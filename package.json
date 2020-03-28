@@ -6,7 +6,6 @@
   "private": true,
   "scripts": {
     "lint": "prettier \"src/**/**/*.{html,scss,js,jsx}\" --write && eslint \"src/**/**/*.{js,jsx}\" && stylelint ./src/**/**/*.js",
-    "test": "echo \"Test under development!\"",
     "start": "webpack-dev-server --mode development --open --config webpack.dev.js --hot",
     "build": "webpack --config webpack.prod.js"
   },
