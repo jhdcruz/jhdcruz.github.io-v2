@@ -1,7 +1,6 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
 import styled from "styled-components";
-
 import aboutData from "./json/about.data.json";
 
 // * Skill Section

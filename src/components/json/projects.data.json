@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "id": "1",
+      "key": "1",
       "icon": "https://i.imgur.com/HIrXh3g.png",
       "title": "About Me | Portfolio",
       "description": "Revamp of the personal portfolio website | Current Website",
@@ -10,7 +10,7 @@
       "preview": "https://jhdcruzgithubio-v2.jhdcrux.now.sh/"
     },
     {
-      "id": "2",
+      "key": "2",
       "icon": "https://i.imgur.com/UmdYBml.png",
       "title": "Desktop Messenger",
       "description": "Facebook Messenger for Desktop w/ Frameless window.",
@@ -18,10 +18,10 @@
       "category": "Electron, NSIS"
     },
     {
-      "id": "3",
+      "key": "3",
       "icon": "https://i.imgur.com/FLBWrqg.png",
       "title": "Desktop Messages",
-      "description": "Google's Android Messages for Desktop w/ Frameless Window",
+      "description": "Google's Androkey Messages for Desktop w/ Frameless Window",
       "link": "https://github.com/jhdcruz/Desktop-Messages",
       "category": "Electron, NSIS"
     }

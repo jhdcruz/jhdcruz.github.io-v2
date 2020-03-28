@@ -3,6 +3,7 @@ import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 import styled from "styled-components";
 import ProfileImg from "images/icon.png";
 import SkillSets from "components/skillSets";
+import aboutData from "components/json/about.data.json";
 
 const ProfileContent = styled.div`
   display: block;
