@@ -20,7 +20,7 @@ export default function SkillSets() {
           <i className="fas fa-bookmark" /> Front-end
         </h5>
         <ul>
-          {aboutData.Skills.FrontEnd.map((fe) => (
+          {aboutData.Skills.FrontEnd.map(fe => (
             <li>
               <i className="fas fa-angle-right" /> {fe}
             </li>
@@ -34,7 +34,7 @@ export default function SkillSets() {
           <i className="fas fa-bookmark" /> Design
         </h5>
         <ul>
-          {aboutData.Skills.Design.map((des) => (
+          {aboutData.Skills.Design.map(des => (
             <li>
               <i className="fas fa-angle-right" /> {des}
             </li>
@@ -48,7 +48,7 @@ export default function SkillSets() {
           <i className="fas fa-bookmark" /> Services
         </h5>
         <ul>
-          {aboutData.Skills.Services.map((svc) => (
+          {aboutData.Skills.Services.map(svc => (
             <li>
               <i className="fas fa-angle-right" /> {svc}
             </li>
@@ -62,7 +62,7 @@ export default function SkillSets() {
           <i className="fas fa-bookmark" /> Others
         </h5>
         <ul>
-          {aboutData.Skills.Others.map((oth) => (
+          {aboutData.Skills.Others.map(oth => (
             <li>
               <i className="fas fa-angle-right" /> {oth}
             </li>
