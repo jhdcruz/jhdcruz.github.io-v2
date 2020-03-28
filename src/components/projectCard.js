@@ -56,7 +56,7 @@ const ProjectLabel = styled.label`
 
 function ProjectCard(props) {
   return (
-    <Card className="card column" key={props.id}>
+    <Card className="card column" key={props.key}>
       <CardContent className="card-content">
         <CardHeading className="media">
           <div className="media-left">
