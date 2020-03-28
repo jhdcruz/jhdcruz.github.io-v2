@@ -6,8 +6,8 @@ import "dependency/bulma/css/bulma.min.css";
 // * Components Import
 import Nav from "components/nav";
 import Intro from "./Introduction";
-import Projects from "layouts/Projects/Projects";
-import About from "layouts/About/About";
+import Projects from "./Projects";
+import About from "./About";
 
 import { createGlobalStyle } from "styled-components";
 

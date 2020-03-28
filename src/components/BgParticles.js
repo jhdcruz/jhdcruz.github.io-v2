@@ -1,7 +1,7 @@
 import React from "react";
 
 import Particles from "react-particles-js";
-import particlesConfig from "./particlesjs-config.json";
+import particlesConfig from "./json/particlesjs-config.json";
 
 import { createGlobalStyle } from "styled-components";
 

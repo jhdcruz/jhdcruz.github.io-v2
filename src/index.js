@@ -4,7 +4,7 @@ import ReactDOM from "dependency/react-dom";
 
 // * Components Import
 import Wrapper from "layouts/Wrapper";
-import BgParticles from "layouts/BgParticles/BgParticles";
+import BgParticles from "components/BgParticles";
 import Footer from "components/footer";
 
 // * Assets Import

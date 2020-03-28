@@ -5,7 +5,7 @@ import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 
 // * Component Imports
 import ProjectCard from "components/projectCard";
-import projectList from "./projects.data";
+import projectList from "components/json/projects.data";
 
 const ContentWrapper = styled.div`
   margin: 3vh auto;
