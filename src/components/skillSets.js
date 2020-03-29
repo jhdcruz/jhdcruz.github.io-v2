@@ -7,6 +7,10 @@ import aboutData from "./json/about.data.json";
 const SkillsGrid = styled.div`
   width: 60%;
   margin: 4% 0;
+
+  @media only screen and (max-width: 720px) {
+    margin: 4% auto;
+  }
 `;
 
 const SkillSet = styled.div`
@@ -14,7 +18,7 @@ const SkillSet = styled.div`
   margin: 8px auto;
   width: 95%;
   margin-bottom: 10px;
-  padding: 0 2.5%;
+  padding: 0 2%;
 `;
 
 const SkillHeader = styled.h4`
