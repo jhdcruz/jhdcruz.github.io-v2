@@ -3,42 +3,46 @@
     "FrontEnd": [
       "JavaScript (ES5+)",
       "ReactJS 16+",
-      "Electron Framework 5+"
+      "Electron Framework 7+",
+      "NSIS v3"
     ],
     "Design": [
       "Flat & Material UI",
-      "Adobe XD",
+      "Adobe Xd",
       "Figma",
       "Photoshop CS6/CC"
     ],
     "Services": [
       "TravisCI",
       "CircleCI",
-      "Sentry"
+      "Sentry",
+      "Netlify",
+      "ZEIT Now"
     ],
     "Others": [
       "Git VCS",
-      "Linux OS"
+      "GNU/Linux (pref. debian-based)",
+      "Java 8+ (CLI)"
     ]
   },
   "SocialContact": [
     {
-      "id": "1",
+      "key": "1",
       "icon": "fab fa-facebook-messenger",
       "link": "https://m.me/jhdcruz"
     },
     {
-      "id": "2",
+      "key": "2",
       "icon": "fab fa-github",
       "link": "https://github.com/jhdcruz"
     },
     {
-      "id": "3",
+      "key": "3",
       "icon": "fab fa-stack-overflow",
       "link": "https://stackoverflow.com/users/7976244/aegir-aideron?tab=profile"
     },
     {
-      "id": "4",
+      "key": "4",
       "icon": "fab fa-keybase",
       "link": "https://keybase.io/jhdcruz"
     }

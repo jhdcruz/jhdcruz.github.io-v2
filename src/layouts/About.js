@@ -9,7 +9,7 @@ const ProfileContent = styled.div`
   display: block;
   color: white;
   text-align: center;
-  margin: 4% 1% 4% 0;
+  margin: 4% 0;
 `;
 
 const Profile = styled.img`
@@ -57,7 +57,7 @@ function SocialContacts() {
   return (
     <Social>
       {aboutData.SocialContact.map(contact => (
-        <a href={contact.link} key={contact.id}>
+        <a href={contact.link} key={contact.key}>
           <i className={contact.icon} />
         </a>
       ))}
