@@ -9,18 +9,19 @@ const ProfileContent = styled.div`
   display: block;
   color: white;
   text-align: center;
+  margin: 4% 1% 4% 0;
 `;
 
 const Profile = styled.img`
   border-radius: 100%;
-  width: 16em;
+  width: 14em;
   height: auto;
-  margin: 0 auto;
+  margin: 3% auto;
   display: block;
 `;
 
 const Name = styled.h1`
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   line-height: 1;
   display: block;
 `;
@@ -37,7 +38,7 @@ const Social = styled.div`
   margin: 7px 0;
 
   a {
-    font-size: 25px;
+    font-size: 30px;
     color: #e7e7e7;
 
     :hover {
@@ -50,14 +51,6 @@ const Social = styled.div`
     padding: 3px;
     height: auto;
   }
-`;
-
-// * Bio Section
-const Bio = styled.div`
-  margin: 0.5em auto;
-  padding: 0.8em 3em;
-  color: white;
-  text-align: justify;
 `;
 
 function SocialContacts() {
@@ -81,27 +74,15 @@ function PersonalInfo() {
   );
 }
 
-function Biography() {
-  return (
-    <Bio>
-      Exercitation labore ut non est deserunt dolore cupidatat consectetur in
-      nostrud sit nisi est laboris. Duis ad elit do consequat. Mollit nisi ut ea
-      ea commodo est consectetur fugiat nulla ex. Sunt ad id quis nisi in enim
-      laborum ea proident duis qui commodo.
-    </Bio>
-  );
-}
-
 export default function About() {
   return (
-    <div className="container">
-      <ProfileContent>
+    <div className="container-fluid columns">
+      <ProfileContent className="column is-one-third">
         <Profile className="img-fluid" src={ProfileImg} />
         <PersonalInfo />
         <SocialContacts />
       </ProfileContent>
-      <Biography />
-      <SkillSets />
+      <SkillSets className="column is-full" />
     </div>
   );
 }
