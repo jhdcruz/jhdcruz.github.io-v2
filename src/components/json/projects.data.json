@@ -4,13 +4,22 @@
       "key": "1",
       "icon": "https://i.imgur.com/HIrXh3g.png",
       "title": "About Me | Portfolio",
-      "description": "Revamp of the personal portfolio website | Current Website",
+      "description": "First portfolio made with basic web development.",
       "link": "https://github.com/jhdcruz/jhdcruz.github.io",
-      "category": "ReactJS (Manual Setup)",
-      "preview": "https://jhdcruzgithubio-v2.jhdcrux.now.sh/"
+      "category": "HTML, CSS",
+      "preview": "https://jhdcruz.netlify.com/"
     },
     {
       "key": "2",
+      "icon": "https://i.imgur.com/HIrXh3g.png",
+      "title": "About Me | Portfolio-v2",
+      "description": "Revamp of the personal portfolio website | Current Website.",
+      "link": "https://github.com/jhdcruz/jhdcruz.github.io-v2",
+      "category": "ReactJS (Manual Setup)",
+      "preview": "https://jhdcruz.now.sh/"
+    },
+    {
+      "key": "3",
       "icon": "https://i.imgur.com/UmdYBml.png",
       "title": "Desktop Messenger",
       "description": "Facebook Messenger for Desktop w/ Frameless window.",
@@ -18,7 +27,7 @@
       "category": "Electron, NSIS"
     },
     {
-      "key": "3",
+      "key": "4",
       "icon": "https://i.imgur.com/FLBWrqg.png",
       "title": "Desktop Messages",
       "description": "Google's Android Messages for Desktop w/ Frameless Window",

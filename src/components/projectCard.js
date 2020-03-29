@@ -6,7 +6,7 @@ const Card = styled.div`
   vertical-align: middle;
   background-color: transparent;
   margin: 0 auto;
-  flex-grow: 0;
+  flex-grow: 1;
   flex-basis: auto;
 `;
 
@@ -29,6 +29,7 @@ const ProjectTitle = styled.h4`
   font-weight: 500;
   letter-spacing: 0.5px;
   color: #fff;
+  overflow: hidden;
 `;
 
 const ProjectContent = styled.div`
@@ -53,6 +54,8 @@ const ProjectLabel = styled.label`
  *  - link
  *  - preview
  */
+
+// TODO: Varying screen width | Overlapsing project content
 
 function ProjectCard(props) {
   return (
