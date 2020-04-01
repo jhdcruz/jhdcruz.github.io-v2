@@ -11,20 +11,6 @@ Major revamp of the [old website UI/UX](https://github.com/jhdcruz/jhdcruz.githu
 
 Featuring new UI/UX Design; lessened distracting objects.
 
-## Roadmap
-
-- [x] Recent Contribution component *(Temp. removed)*
-- [x] React-router-dom integration (SPA)
-- [ ] SVG Branding rework
-- [ ] Mobile Layout
-- [ ] Beyond `1336x768` screen resolution support
-- [ ] Code Documentation/Comments
-- [ ] Performance Improvement *(Fine-tuning)*
-
-**Optional:**
-
-- [x] `styled-components` implementation
-
 ## License
 
 This work is licensed under [MIT License](/LICENSE.txt).
