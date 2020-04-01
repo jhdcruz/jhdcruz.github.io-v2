@@ -3,8 +3,7 @@
     "FrontEnd": [
       "JavaScript (ES5+)",
       "ReactJS 16+",
-      "Electron Framework 7+",
-      "NSIS v3"
+      "Electron Framework 7+"
     ],
     "Design": [
       "Flat & Material UI",
@@ -15,14 +14,13 @@
     "Services": [
       "TravisCI",
       "CircleCI",
-      "Sentry",
-      "Netlify",
-      "ZEIT Now"
+      "Rollbar"
     ],
     "Others": [
       "Git VCS",
       "GNU/Linux (pref. debian-based)",
-      "Java 8+ (CLI)"
+      "Java 8+ (CLI)",
+      "NSIS v3"
     ]
   },
   "SocialContact": [
