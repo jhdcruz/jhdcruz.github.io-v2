@@ -2,19 +2,26 @@
   "Skills": {
     "FrontEnd": [
       "JavaScript (ES5+)",
+      "TypeScript 3+",
       "ReactJS 16+",
-      "Electron Framework 7+"
+      "Electron Framework 7+",
+      "Ionic Framework 5+"
+      "Styled Components",
+      "Sass/Scss",
+      "Webpack 4+",
+      "Gulp 4+"
     ],
     "Design": [
       "Flat & Material UI",
-      "Adobe Xd",
       "Figma",
       "Photoshop CS6/CC"
     ],
     "Services": [
       "TravisCI",
-      "CircleCI",
-      "Rollbar"
+      "GitHub Actions",
+      "Azure Pipelines",
+      "Rollbar",
+      "Sentry"
     ],
     "Others": [
       "Git VCS",
@@ -35,14 +42,14 @@
       "link": "https://github.com/jhdcruz"
     },
     {
-      "key": "3",
-      "icon": "fab fa-stack-overflow",
-      "link": "https://stackoverflow.com/users/7976244/aegir-aideron?tab=profile"
-    },
-    {
       "key": "4",
       "icon": "fab fa-keybase",
       "link": "https://keybase.io/jhdcruz"
+    },
+    {
+      "key": "3",
+      "icon": "fab fa-stack-overflow",
+      "link": "https://stackoverflow.com/users/7976244/aegir-aideron?tab=profile"
     }
   ]
 }
