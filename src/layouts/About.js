@@ -69,7 +69,7 @@ function PersonalInfo() {
   return (
     <>
       <Name>Joshua Hero Dela Cruz</Name>
-      <PersonalTitle>A Hobbyist Front-End Web Developer</PersonalTitle>
+      <PersonalTitle>A Hobbyist Coder & Front-End Web Developer</PersonalTitle>
     </>
   );
 }
