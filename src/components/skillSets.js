@@ -22,7 +22,7 @@ const SkillSet = styled.div`
 `;
 
 const SkillHeader = styled.h4`
-  font-size: 1.5rem;
+  font-size: 1.45rem;
 `;
 
 const SkillBlock = styled.div`
@@ -30,7 +30,7 @@ const SkillBlock = styled.div`
 `;
 
 const SkillEntry = styled.li`
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 `;
 
 function FrontEnd() {
