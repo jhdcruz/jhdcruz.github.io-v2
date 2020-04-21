@@ -1,7 +1,7 @@
-import React from "react";
-import "dependency/bulma/css/bulma.min.css";
-import styled from "styled-components";
-import aboutData from "./json/about.data.json";
+import React from 'react';
+import 'dependency/bulma/css/bulma.min.css';
+import styled from 'styled-components';
+import aboutData from './json/about.data.json';
 
 // * Skill Section
 const SkillsGrid = styled.div`
@@ -41,7 +41,7 @@ function FrontEnd() {
       </SkillHeader>
       <hr />
       <ul>
-        {aboutData.Skills.FrontEnd.map(fe => (
+        {aboutData.Skills.FrontEnd.map((fe) => (
           <SkillEntry>
             <i className="fas fa-angle-right" /> {fe}
           </SkillEntry>
@@ -59,7 +59,7 @@ function Design() {
       </SkillHeader>
       <hr />
       <ul>
-        {aboutData.Skills.Design.map(des => (
+        {aboutData.Skills.Design.map((des) => (
           <SkillEntry>
             <i className="fas fa-angle-right" /> {des}
           </SkillEntry>
@@ -77,7 +77,7 @@ function Services() {
       </SkillHeader>
       <hr />
       <ul>
-        {aboutData.Skills.Services.map(svc => (
+        {aboutData.Skills.Services.map((svc) => (
           <SkillEntry>
             <i className="fas fa-angle-right" /> {svc}
           </SkillEntry>
@@ -95,7 +95,7 @@ function Others() {
       </SkillHeader>
       <hr />
       <ul>
-        {aboutData.Skills.Others.map(oth => (
+        {aboutData.Skills.Others.map((oth) => (
           <SkillEntry>
             <i className="fas fa-angle-right" /> {oth}
           </SkillEntry>

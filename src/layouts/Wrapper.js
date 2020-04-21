@@ -1,15 +1,15 @@
-import React from "react";
-import { HashRouter, Route } from "react-router-dom";
-import { AnimatedSwitch, spring } from "react-router-transition";
-import "dependency/bulma/css/bulma.min.css";
+import React from 'react';
+import { HashRouter, Route } from 'react-router-dom';
+import { AnimatedSwitch, spring } from 'react-router-transition';
+import 'dependency/bulma/css/bulma.min.css';
 
 // * Components Import
-import Nav from "components/nav";
-import Intro from "./Introduction";
-import Projects from "./Projects";
-import About from "./About";
+import Nav from 'components/nav';
+import Intro from './Introduction';
+import Projects from './Projects';
+import About from './About';
 
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const RouterWrapper = createGlobalStyle`
   .routerContent {
@@ -27,7 +27,7 @@ function Router() {
   function mapStyles(styles) {
     return {
       opacity: styles.opacity,
-      transform: `scale(${styles.scale})`
+      transform: `scale(${styles.scale})`,
     };
   }
 
@@ -35,7 +35,7 @@ function Router() {
   function bounce(val) {
     return spring(val, {
       stiffness: 360,
-      damping: 65
+      damping: 65,
     });
   }
 
@@ -43,18 +43,18 @@ function Router() {
     // ? tart in a transparent, upscaled state
     atEnter: {
       opacity: 0,
-      scale: 1.2
+      scale: 1.2,
     },
     // ? leave in a transparent, downscaled state
     atLeave: {
       opacity: bounce(0),
-      scale: bounce(0.8)
+      scale: bounce(0.8),
     },
     // ? and rest at an opaque, normally-scaled state
     atActive: {
       opacity: bounce(1),
-      scale: bounce(1)
-    }
+      scale: bounce(1),
+    },
   };
 
   return (
