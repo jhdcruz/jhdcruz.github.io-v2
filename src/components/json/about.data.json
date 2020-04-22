@@ -7,9 +7,7 @@
       "Electron Framework 7+",
       "Ionic Framework 5+",
       "Styled Components",
-      "Sass/Scss",
-      "Webpack 4+",
-      "Gulp 4+"
+      "Sass/Scss"
     ],
     "Design": [
       "Flat & Material UI",
