@@ -1,14 +1,14 @@
 // ! High Level imports
-import React from 'dependency/react';
-import ReactDOM from 'dependency/react-dom';
+import React from "dependency/react";
+import ReactDOM from "dependency/react-dom";
 
 // * Components Import
-import Wrapper from 'layouts/Wrapper';
-import BgParticles from 'components/BgParticles';
-import Footer from 'components/footer';
+import Wrapper from "layouts/Wrapper";
+import BgParticles from "components/BgParticles";
+import Footer from "components/footer";
 
 // * Assets Import
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body,
@@ -81,5 +81,5 @@ ReactDOM.render(
       <Footer />
     </MainContent>
   </>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
