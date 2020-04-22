@@ -3,7 +3,7 @@
 
 ### Status:
 
-![Website](https://img.shields.io/website?down_color=red&down_message=maintenance&style=flat&up_color=green&up_message=online&url=https%3A%2F%2Fjhdcruz.now.sh) [![CodeFactor](https://www.codefactor.io/repository/github/jhdcruz/jhdcruz.github.io-v2/badge)](https://www.codefactor.io/repository/github/jhdcruz/jhdcruz.github.io-v2) [![Build Status](https://travis-ci.com/jhdcruz/jhdcruz.github.io-v2.svg?token=fiiouVpFksoACZRN1N2B&branch=master)](https://travis-ci.com/jhdcruz/jhdcruz.github.io-v2)
+[![CodeFactor](https://www.codefactor.io/repository/github/jhdcruz/jhdcruz.github.io-v2/badge)](https://www.codefactor.io/repository/github/jhdcruz/jhdcruz.github.io-v2) [![Build Status](https://travis-ci.com/jhdcruz/jhdcruz.github.io-v2.svg?token=fiiouVpFksoACZRN1N2B&branch=master)](https://travis-ci.com/jhdcruz/jhdcruz.github.io-v2)
 
 ----
 
