@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "public"),
     filename: "[name].js",
-    chunkFilename: "[name].[id].chunk.js"
+    chunkFilename: "[name].[id].chunk.js",
   },
   resolve: {
     modules: ["node_modules"],
@@ -13,15 +13,15 @@ module.exports = {
       images: path.join(__dirname, "./src/shared/img"),
       components: path.join(__dirname, "./src/components"),
       layouts: path.join(__dirname, "./src/layouts"),
-      dependency: path.join(__dirname, "node_modules")
-    }
+      dependency: path.join(__dirname, "node_modules"),
+    },
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ["stylelint-custom-processor-loader", "babel-loader"]
+        use: ["stylelint-custom-processor-loader", "babel-loader"],
       },
       {
         test: /\.(css|scss)$/,
@@ -33,25 +33,25 @@ module.exports = {
             options: {
               sassOptions: {
                 fibers: false,
-                outputStyle: "compressed"
-              }
-            }
-          }
-        ]
+                outputStyle: "compressed",
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.(png|svg|jpg|gif)$/i,
-        use: "file-loader"
+        use: "file-loader",
       },
       {
         test: /\.(ttf|otf|eot|woff|woff2)$/,
-        use: "file-loader"
-      }
-    ]
+        use: "file-loader",
+      },
+    ],
   },
   optimization: {
     splitChunks: {
-      chunks: "all"
-    }
-  }
+      chunks: "all",
+    },
+  },
 };
