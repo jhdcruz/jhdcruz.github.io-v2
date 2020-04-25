@@ -1,6 +1,6 @@
-import React from "react";
-import "dependency/bulma/css/bulma.min.css";
-import styled from "styled-components";
+import React from 'react';
+import 'dependency/bulma/css/bulma.min.css';
+import styled from 'styled-components';
 
 const GitHub = styled.a`
   font-size: 12.5px;
