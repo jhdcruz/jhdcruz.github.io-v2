@@ -1,10 +1,10 @@
-import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import { NavLink } from "react-router-dom";
 
 // * Components Import
-import PageLink from './pageLink';
-import brand from 'images/HERO.svg';
+import PageLink from "./pageLink";
+import brand from "images/HERO.svg";
 
 export const NavStyles = createGlobalStyle`
   .navbar-end {
@@ -54,11 +54,11 @@ export const NavRight = styled.div`
 export default function Nav() {
   // ? Hamburger Menu toggler
   function navActive() {
-    const navBurger = document.querySelector('.navbar-burger');
-    const navMenu = document.querySelector('.navbar-menu');
+    const navBurger = document.querySelector(".navbar-burger");
+    const navMenu = document.querySelector(".navbar-menu");
 
-    navBurger.classList.toggle('is-active');
-    navMenu.classList.toggle('is-active');
+    navBurger.classList.toggle("is-active");
+    navMenu.classList.toggle("is-active");
   }
 
   return (
