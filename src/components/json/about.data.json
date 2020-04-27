@@ -4,8 +4,7 @@
       "JavaScript (ES5+)",
       "ReactJS 16+",
       "Electron Framework 7+",
-      "Ionic Framework 5+",
-      "Styled Components",
+      "Ionic Framework 5+ (React)",
       "Sass/Scss"
     ],
     "Design": [
@@ -30,8 +29,8 @@
   "SocialContact": [
     {
       "key": "1",
-      "icon": "fab fa-facebook-messenger",
-      "link": "https://m.me/jhdcruz"
+      "icon": "fab fa-twitter",
+      "link": "https://twitter.com/jhdcrux"
     },
     {
       "key": "2",
