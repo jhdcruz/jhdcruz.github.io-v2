@@ -7,16 +7,14 @@
       "Sass/Scss"
     ],
     "Design": [
-      "Flat & Material UI",
+      "Flat & Material UI/UX",
       "Figma",
       "Photoshop CS6/CC"
     ],
     "Services": [
-      "TravisCI",
+      "Travis CI",
       "GitHub Actions",
-      "Azure Pipelines",
-      "Rollbar",
-      "Sentry"
+      "Vercel"
     ],
     "Others": [
       "Git VCS",
