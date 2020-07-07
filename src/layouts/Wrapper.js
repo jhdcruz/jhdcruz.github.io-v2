@@ -1,15 +1,15 @@
-import React from "react";
-import { HashRouter, Route } from "react-router-dom";
-import { AnimatedSwitch, spring } from "react-router-transition";
-import "dependency/bulma/css/bulma.min.css";
+import React from 'react';
+import { HashRouter, Route } from 'react-router-dom';
+import { AnimatedSwitch, spring } from 'react-router-transition';
+import 'dependency/bulma/css/bulma.min.css';
 
 // * Components Import
-import Nav from "components/nav";
-import Intro from "./Introduction";
-import Projects from "./Projects";
-import About from "./About";
+import Nav from 'components/nav';
+import Intro from './Introduction';
+import Projects from './Projects';
+import About from './About';
 
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const RouterWrapper = createGlobalStyle`
   .routerContent {
