@@ -1,0 +1,9 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    timezone: Asia/Manila
+  open-pull-requests-limit: 99
+  target-branch: preview
