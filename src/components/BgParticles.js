@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Particles from "react-particles-js";
-import particlesConfig from "./json/particlesjs-config.json";
+import Particles from 'react-particles-js';
+import particlesConfig from './json/particlesjs-config.json';
 
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const ParticlesBg = createGlobalStyle`
   canvas,

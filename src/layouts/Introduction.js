@@ -1,11 +1,11 @@
-import React from "react";
-import { Route } from "react-router-dom";
-import Projects from "./Projects";
-import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
-import styled from "styled-components";
+import React from 'react';
+import { Route } from 'react-router-dom';
+import Projects from './Projects';
+import 'dependency/@fortawesome/fontawesome-free/css/all.min.css';
+import styled from 'styled-components';
 
 // * Component Imports
-import PageLink from "components/pageLink";
+import PageLink from 'components/pageLink';
 
 // * Component Style
 const ContentWrapper = styled.div`
