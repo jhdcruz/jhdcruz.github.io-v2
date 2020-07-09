@@ -11,6 +11,15 @@ Major revamp of the [old website UI/UX](https://github.com/jhdcruz/jhdcruz.githu
 
 Featuring new UI/UX Design; lessened distracting objects.
 
+----
+
+### TODO
+
+[ ] - Rewrite routing (remove `#` routes)
+[ ] - Rework project section
+[ ] - Mobile UI enhancement
+[ ] - New footer layout
+
 ## License
 
 This work is licensed under [MIT License](/LICENSE.txt).
