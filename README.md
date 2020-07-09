@@ -15,10 +15,10 @@ Featuring new UI/UX Design; lessened distracting objects.
 
 ### TODO
 
-[ ] - Rewrite routing (remove `#` routes)
-[ ] - Rework project section
-[ ] - Mobile UI enhancement
-[ ] - New footer layout
+- [ ] Rewrite routing (remove `#` routes)
+- [ ] Rework project section
+- [ ] Mobile UI enhancement
+- [ ] New footer layout
 
 ## License
 
