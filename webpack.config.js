@@ -1,21 +1,21 @@
-const path = require('path');
-const { merge } = require('webpack-merge');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const { merge } = require("webpack-merge");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const commonConfig = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, 'public'),
-    filename: '[name].js',
-    chunkFilename: '[name].[id].chunk.js',
+    path: path.resolve(__dirname, "public"),
+    filename: "[name].js",
+    chunkFilename: "[name].[id].chunk.js",
   },
   resolve: {
-    modules: ['node_modules'],
+    modules: ["node_modules"],
     alias: {
-      images: path.join(__dirname, './src/shared/img'),
-      components: path.join(__dirname, './src/components'),
-      layouts: path.join(__dirname, './src/layouts'),
-      dependency: path.join(__dirname, 'node_modules'),
+      images: path.join(__dirname, "./src/shared/img"),
+      components: path.join(__dirname, "./src/components"),
+      layouts: path.join(__dirname, "./src/layouts"),
+      dependency: path.join(__dirname, "node_modules"),
     },
   },
   module: {
@@ -23,19 +23,19 @@ const commonConfig = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['stylelint-custom-processor-loader', 'babel-loader'],
+        use: ["stylelint-custom-processor-loader", "babel-loader"],
       },
       {
         test: /\.(css|scss)$/,
         use: [
-          'style-loader',
-          'css-loader',
+          "style-loader",
+          "css-loader",
           {
-            loader: 'sass-loader',
+            loader: "sass-loader",
             options: {
               sassOptions: {
                 fibers: false,
-                outputStyle: 'compressed',
+                outputStyle: "compressed",
               },
             },
           },
@@ -43,59 +43,59 @@ const commonConfig = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/i,
-        use: 'file-loader',
+        use: "file-loader",
       },
       {
         test: /\.(ttf|otf|eot|woff|woff2)$/,
-        use: 'file-loader',
+        use: "file-loader",
       },
     ],
   },
   optimization: {
     splitChunks: {
-      chunks: 'all',
+      chunks: "all",
     },
   },
 };
 
 const productionConfig = {
-  mode: 'production',
+  mode: "production",
   plugins: [
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
-      template: require('html-webpack-template'),
-      title: 'About me | Joshua Hero Dela Cruz',
-      favicon: './src/shared/img/icon.png',
-      appMountId: 'root',
+      template: require("html-webpack-template"),
+      title: "About me | Joshua Hero Dela Cruz",
+      favicon: "./src/shared/img/icon.png",
+      appMountId: "root",
       mobile: true,
-      lang: 'en-US',
+      lang: "en-US",
       showErrors: false,
       meta: [
         {
-          name: 'description',
-          content: 'Front-End Web Developer, Open-Source Enthusiast.',
+          name: "description",
+          content: "Front-End Web Developer, Open-Source Enthusiast.",
         },
         {
-          name: 'owner',
-          content: 'Joshua Hero Dela Cruz (Aegir Aideron)',
+          name: "owner",
+          content: "Joshua Hero Dela Cruz (Aegir Aideron)",
         },
       ],
       links: [
         {
-          rel: 'preload',
+          rel: "preload",
           href:
-            'https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap',
-          as: 'style',
+            "https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap",
+          as: "style",
         },
         {
-          rel: 'stylesheet',
+          rel: "stylesheet",
           href:
-            'https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap',
+            "https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap",
         },
       ],
       googleAnalytics: {
-        trackingId: 'UA-131928651-1',
+        trackingId: "UA-131928651-1",
         pageViewOnLoad: true,
       },
     }),
@@ -103,45 +103,45 @@ const productionConfig = {
 };
 
 const developmentConfig = {
-  mode: 'development',
-  devtool: 'inline-source-map',
+  mode: "development",
+  devtool: "inline-source-map",
   devServer: {
-    contentBase: './public',
+    contentBase: "./public",
   },
   plugins: [
     new HtmlWebpackPlugin({
       inject: false,
-      template: require('html-webpack-template'),
-      title: 'About me | Joshua Hero Dela Cruz | Developer Mode',
-      favicon: './src/shared/img/icon.png',
-      appMountId: 'root',
+      template: require("html-webpack-template"),
+      title: "About me | Joshua Hero Dela Cruz | Developer Mode",
+      favicon: "./src/shared/img/icon.png",
+      appMountId: "root",
       mobile: true,
-      lang: 'en-US',
+      lang: "en-US",
       meta: [
         {
-          name: 'description',
-          content: 'Front-End Web Developer, Open-Source Enthusiast.',
+          name: "description",
+          content: "Front-End Web Developer, Open-Source Enthusiast.",
         },
         {
-          name: 'owner',
-          content: 'Joshua Hero Dela Cruz (Aegir Aideron)',
+          name: "owner",
+          content: "Joshua Hero Dela Cruz (Aegir Aideron)",
         },
       ],
       links: [
         {
-          rel: 'preload',
+          rel: "preload",
           href:
-            'https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap',
-          as: 'style',
+            "https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap",
+          as: "style",
         },
         {
-          rel: 'stylesheet',
+          rel: "stylesheet",
           href:
-            'https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap',
+            "https://fonts.googleapis.com/css?family=Kanit:400,600&display=swap",
         },
       ],
       googleAnalytics: {
-        trackingId: 'UA-XXXXXXXXX-X',
+        trackingId: "UA-XXXXXXXXX-X",
         pageViewOnLoad: true,
       },
     }),
@@ -150,11 +150,11 @@ const developmentConfig = {
 
 module.exports = (env) => {
   switch (env) {
-    case 'development':
+    case "development":
       return merge(commonConfig, developmentConfig);
-    case 'production':
+    case "production":
       return merge(commonConfig, productionConfig);
     default:
-      throw new Error('No matching configuration was found!');
+      throw new Error("No matching configuration was found!");
   }
 };
