@@ -13,8 +13,9 @@ Featuring new UI/UX Design; lessened distracting objects.
 
 ----
 
-### TODO
+### TODO | v0.5.0
 
+- [ ] Nextjs Port
 - [ ] Rewrite routing (remove `#` routes)
 - [ ] Rework project section
 - [ ] Mobile UI enhancement
