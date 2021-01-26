@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
-    "lint": "prettier \"**.{html,scss,ts,tsx}\" --write && eslint \"**.{ts,tsx}\" && stylelint **.{ts,tsx}"
+    "lint": "prettier \"**/*.{ts,tsx,scss}\" --check && eslint . --ext .ts,.tsx && stylelint \"**/*.{ts,tsx}\"",
+    "lint-fix": "prettier \"**/*.{ts,tsx,scss}\" --write && eslint . --ext .ts,.tsx --fix && stylelint \"**/*.{ts,tsx}\""
   },
   "dependencies": {
     "next": "latest",
@@ -18,11 +19,16 @@
     "@types/node": "14.14.22",
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
+    "@typescript-eslint/eslint-plugin": "4.14.1",
+    "@typescript-eslint/parser": "4.14.1",
     "eslint": "7.18.0",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-react": "7.22.0",
     "eslint-plugin-react-hooks": "4.2.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
     "prettier": "2.2.1",
+    "sass": "1.32.5",
     "stylelint": "13.9.0",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-prettier": "1.1.2",
@@ -36,5 +42,15 @@
   "bugs": {
     "url": "https://github.com/jhdcruz/jhdcruz.github.io-v2/issues"
   },
-  "homepage": "https://jhdcruz.now.sh"
+  "homepage": "https://jhdcruz.now.sh",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --cache --fix",
+    "*.css": "stylelint --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
 }
