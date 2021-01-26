@@ -8,6 +8,5 @@ A complete rewrite of my [personal portfolio](https://github.com/jhdcruz/jhdcruz
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Next.js](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
 
-----
+---
