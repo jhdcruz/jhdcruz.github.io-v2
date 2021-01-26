@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "baseBranches": [
+    "production"
+  ],
+  "packageRules": [
+    {
+      "updateTypes": [
+        "major",
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true
+    }
+  ],
+  "assigneesFromCodeOwners": true
+}
