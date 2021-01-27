@@ -5,7 +5,7 @@
   "rules": {
     "at-rule-no-unknown": null
   },
-  "configBasedir": "./client",
+  "configBasedir": ".",
   "ignoreFiles": [
     "node_modules/**/**"
   ]
