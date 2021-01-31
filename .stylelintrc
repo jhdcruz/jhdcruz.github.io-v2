@@ -1,6 +1,11 @@
 {
+  "processors": [
+    "stylelint-processor-styled-components"
+  ],
   "extends": [
-    "stylelint-prettier/recommended"
+    "stylelint-config-recommended",
+    "stylelint-prettier/recommended",
+    "stylelint-config-styled-components"
   ],
   "rules": {
     "at-rule-no-unknown": null
