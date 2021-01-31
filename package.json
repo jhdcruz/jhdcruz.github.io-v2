@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "next": "latest",
+    "normalize.css": "8.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
@@ -58,7 +59,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": "eslint --cache --fix",
-    "*.{ts,tsx,scss}": "stylelint --fix",
+    "*.{ts,tsx,scss}": "stylelint",
     "*.{ts,tsx,scss,md}": "prettier --write"
   }
 }
