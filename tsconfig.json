@@ -22,6 +22,10 @@
     "target": "esnext",
     "baseUrl": "."
   },
+  "typeRoots": [
+    "./node_modules/@types",
+    "./types"
+  ],
   "exclude": [
     "node_modules"
   ],
