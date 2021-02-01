@@ -27,13 +27,17 @@ class _Document extends Document {
               <script async src="/gtag.js" />
             </>
           )}
-
           <meta charSet="utf-8" />
           <meta name="description" content="To be filled" />
           <meta name="copyright" content="Joshua Hero Dela Cruz" />
           <meta
             name="keywords"
             content="portfolio, front-end, web, development, developer"
+          />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap"
+            rel="stylesheet"
           />
         </Head>
         <body>

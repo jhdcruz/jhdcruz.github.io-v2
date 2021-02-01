@@ -1,6 +1,7 @@
 import { DefaultTheme } from 'styled-components';
 
 const theme: DefaultTheme = {
+  fonts: 'Kanit, Segoe UI, sans-serif',
   colors: {
     primary: 'blue',
     secondary: 'grey',
