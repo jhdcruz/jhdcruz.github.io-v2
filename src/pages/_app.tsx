@@ -1,13 +1,16 @@
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../constants/theme';
-
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 import 'normalize.css';
 
 function _App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
+      <Nav />
       <Component {...pageProps} />
+      <Footer />
     </ThemeProvider>
   );
 }
