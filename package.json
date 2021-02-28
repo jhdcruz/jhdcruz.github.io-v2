@@ -8,7 +8,8 @@
     "start": "next start",
     "type-check": "tsc",
     "lint": "prettier \"**/*.{ts,tsx,scss}\" --check && eslint . --ext .ts,.tsx && stylelint \"**/*.{ts,tsx}\"",
-    "lint-fix": "prettier \"**/*.{ts,tsx,scss}\" --write && eslint . --ext .ts,.tsx --fix && stylelint \"**/*.{ts,tsx}\""
+    "lint-fix": "prettier \"**/*.{ts,tsx,scss}\" --write && eslint . --ext .ts,.tsx --fix && stylelint \"**/*.{ts,tsx}\"",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "next": "latest",
