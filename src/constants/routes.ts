@@ -1,4 +1,4 @@
-import { Pages } from '../interfaces/Paths';
+import { Pages } from '../types/Paths';
 
 const routes: Pages[] = [
   { path: '/', name: 'home' },

@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styled from 'styled-components';
-import { Pages } from '../interfaces/Paths';
+import { Pages } from '../types/Paths';
 import routes from '../constants/routes';
 
 const Header = styled.div`
