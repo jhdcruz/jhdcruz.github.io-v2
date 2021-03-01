@@ -1,9 +1,8 @@
-import { useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styled from 'styled-components';
-import { Pages } from '../types/Paths';
 import routes from '../constants/routes';
+import { Pages } from '../types/Paths';
 
 const Header = styled.div`
   display: flex;
@@ -19,7 +18,7 @@ const NavItem = styled.div`
 
 const LinkText = styled.a`
   display: inline-block;
-  color: ${(props) => props.theme.colors.blue};
+  color: ${(props) => props.theme.colors.primary};
   height: max-content;
   width: max-content;
   text-decoration: none;
@@ -29,15 +28,11 @@ const LinkText = styled.a`
 `;
 
 export default function Nav() {
-  const Route = useMemo(() => {
-    return routes;
-  }, []);
-
   return (
     <Header>
       <Image src="/logo-192.png" alt="Website's Logo" width={70} height={70} />
       <NavItem>
-        {Route.map((route: Pages) => (
+        {routes.map((route: Pages) => (
           <Link href={route.path} key={route.path} passHref>
             <LinkText>{route.name}</LinkText>
           </Link>
