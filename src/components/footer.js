@@ -26,7 +26,7 @@ export default function Footer() {
         href="https://github.com/jhdcruz/jhdcruz.github.io-v2"
         className="gh-redirect"
       >
-        Copyright &copy; 2019 | Joshua Hero Dela Cruz (Work in Progress)
+        Copyright &copy; 2019 | Joshua Hero Dela Cruz
       </GitHub>
     </footer>
   );
